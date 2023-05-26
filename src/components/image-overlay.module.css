@@ -1,0 +1,29 @@
+.gallery-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+}
+.image-wrapper {
+  position: relative;
+  background-color: #ccc;
+  min-width: 300px;
+  min-height: 300px;
+  max-width: 375px;
+  max-height: 375px;
+}
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  padding: 25px;
+  box-sizing: border-box;
+  color: var(--font-color-light);
+  text-shadow: 2px 2px 0px rgba(0,0,0,0.2);
+  text-align: center;
+}
+.image {
+  height: 100%;
+}
