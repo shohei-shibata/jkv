@@ -12,16 +12,12 @@ const links = [
     url: "/about"
   },
   {
-    name: "Engineering",
-    url: "/engineering"
-  },
-  {
-    name: "Prototyping",
-    url: "/prototyping"
+    name: "Projects",
+    url: "/projects"
   },
   {
     name: "Our Team",
-    url: "/our-team"
+    url: "/team"
   },
   {
     name: "Contact Us",

@@ -15,7 +15,7 @@ const AboutSection = ({services}) => {
         ))}
       </div>
       <div className="center-content btn-wrapper">
-        <Link to="/about" className="btn btn-yellow">Learn More</Link>
+        <Link to="/about" className="btn btn-yellow">...And More!</Link>
       </div>
     </div>
   </>

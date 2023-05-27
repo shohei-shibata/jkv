@@ -8,7 +8,7 @@ const Portrait = ({data}) => {
   console.log("slug", data)
   return (
     <>
-      <Link href={`/team/${data.slug}`} className={portraitCss.teamMemberContainer}>
+      <Link href={`/team/#${data.slug}`} className={portraitCss.teamMemberContainer}>
         <GatsbyImage image={image} alt={data.imageAlt} className={portraitCss.image}/>
         <h3>{data.name}</h3>
         <p className={portraitCss.position}>{data.position}</p>

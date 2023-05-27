@@ -16,7 +16,7 @@ const ContactForm = () => {
       <input name="email" type="email" required/>
       <label htmlFor="message" className={contactFormStyles.label}>Message</label>
       <textarea name="message" rows="10" required/>
-      <input name="submit" type="submit" value="Submit" className={`btn ${contactFormStyles.submitButton}`}/>
+      <input name="submit" type="submit" value="Submit" className={`btn btn-yellow ${contactFormStyles.submitButton}`}/>
     </form>
   )
 }

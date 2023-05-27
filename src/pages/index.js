@@ -42,7 +42,7 @@ const IndexPage = ({data}) => {
               <StaticImage src="../fabrication/fabrication-top-image.jpg"/>
             </div>
             <h3>Let us turn your great idea into reality.</h3>
-            <p>From simple metal fabrication to building an entire electrical or hybrid proof-of-concept vehicle, we can build it for you right here in our shop. </p>
+            <p>From simple metal fabrication to building an entire proof-of-concept vehicle, we can build it for you right here in our shop. </p>
           </div>
           <div className="center-content btn-wrapper">
             <Link to="/prototyping" className="btn">Learn More</Link>
@@ -67,7 +67,6 @@ const IndexPage = ({data}) => {
               <h3>JKV ENGINEERING LLC</h3>
               <h3>789 U.S. 50</h3>
               <h3>Milford, OH 45150</h3>
-              <h3>513-609-9953</h3>
             </div>
             <ContactForm/>
           </div>

@@ -11,9 +11,8 @@ const Layout = ({ children }) => {
         <Link to="/"><StaticImage src="../images/logo-nav.png" height={75}/></Link>
         <ul>
           <li><Link to="/about">About</Link></li>
-          <li><Link to="/engineering">Engineering</Link></li>
-          <li><Link to="/prototyping">Prototyping</Link></li>
-          <li><Link to="/our-team">Our Team</Link></li>
+          <li><Link to="/projects">Projects</Link></li>
+          <li><Link to="/team">Our Team</Link></li>
           <li><Link to="/contact">Contact</Link></li>
         </ul>
       </nav>

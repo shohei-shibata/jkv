@@ -16,8 +16,10 @@ html, body {
 
 .btn {
   background-color: var(--background-color-light);
+  border: none;
   border-radius: 3px;
   padding: 10px 15px;
+  display: block;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   font-size: 1.2em;
   text-transform: uppercase;
@@ -30,6 +32,7 @@ a.btn {
 }
 .btn-yellow {
   background-color: var(--background-color-yellow);
+  color: var(--font-color-light);
 }
 a.btn-yellow {
   color: var(--font-color-light);
@@ -39,6 +42,13 @@ a.btn-yellow {
 }
 .btn-wrapper {
   margin: 30px 0;
+}
+
+.btn-multiple-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 30px 0;
 }
 
 section {
@@ -60,7 +70,7 @@ section {
 }
 .content-wrapper-default-width {
   max-width: 800px;
-  margin: auto;
+  margin: 0 auto;
 }
 
 .contact-row-1-container {
@@ -68,6 +78,10 @@ section {
   grid-template-columns: 300px 1fr;
   gap: 30px;
   margin: 15px 0;
+}
+
+.page-content-wrapper {
+  padding: 50px 0;
 }
 
 .google-map-container iframe {

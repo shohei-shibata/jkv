@@ -12,3 +12,6 @@
 .submit-button {
   margin: 15px 0;
 }
+.submit-button:hover {
+  cursor: pointer;
+}
