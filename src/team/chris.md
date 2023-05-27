@@ -4,6 +4,7 @@ position: "Program Manager and Systems Engineer"
 image: "./portrait_chris_pennekamp.jpg"
 imageAlt: "Chris Portrait"
 slug: "chris"
+order: 2
 category: "Team"
 ---
 

@@ -7,10 +7,11 @@
 .image-wrapper {
   position: relative;
   background-color: #ccc;
-  min-width: 300px;
-  min-height: 300px;
-  max-width: 375px;
-  max-height: 375px;
+  width: 370px;
+  height: 370px;
+}
+.image-wrapper:hover {
+  opacity: 0.9;
 }
 .overlay {
   position: absolute;

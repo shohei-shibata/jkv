@@ -1,13 +1,14 @@
 .form {
   width: 100%;
 }
-
 .form input,
 .form textarea {
   width: 100%;
   box-sizing: border-box;
 }
-
+.label {
+  line-height: 1.5em;
+}
 .submit-button {
   margin: 15px 0;
 }

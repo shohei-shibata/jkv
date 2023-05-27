@@ -1,6 +1,5 @@
 import * as React from "react"
 import { Link, graphql } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
 import Slogan from "../components/slogan"
 import AboutSection from "../components/about"
 import ProjectsSection from "../components/projects"
@@ -8,13 +7,14 @@ import { SectionDark, SectionRegular, SectionYellow } from "../components/sectio
 import ContactForm from "../components/contact-form"
 import SectionTitle from "../components/section-title"
 import Portrait from "../components/portrait"
+import { StaticImage } from "gatsby-plugin-image"
 
 const IndexPage = ({data}) => {
   const services = data.allMarkdownRemark.nodes.filter(item => item.frontmatter.category === "Services")
   const projects = data.allMarkdownRemark.nodes.filter(item => item.frontmatter.category === "Projects")
   const team = data.allMarkdownRemark.nodes.filter(item => item.frontmatter.category === "Team")
+    .sort((a, b) => b.frontmatter.order<a.frontmatter.order)
   const fabrication = data.allMarkdownRemark.nodes.filter(item => item.frontmatter.category === "Fabrication")
-  console.log("fab", fabrication)
   return (
     <>
       <Slogan/>
@@ -27,7 +27,7 @@ const IndexPage = ({data}) => {
       <SectionYellow sectionId="section-cta-contact">
         <div className="content-wrapper-default-width">
           <h1 className="cta-text">Talk to us about your next project</h1>
-          <div className="center-content">
+          <div className="center-content btn-wrapper">
             <Link href="/contact" className="btn centered">
               Contact Us
             </Link>
@@ -37,12 +37,15 @@ const IndexPage = ({data}) => {
       <SectionDark sectionId="prototyping">
         <div className="content-wrapper-default-width">
           <SectionTitle>Fabrication Capabilities</SectionTitle>
-          <div>
-            <ul>
-              {fabrication.map((item, index) => (
-                <li key={`fab-${index+1}`}>{item.frontmatter.title}</li>
-              ))}
-            </ul>
+          <div className="text-section-narrow-width">
+            <div className="center-content">
+              <StaticImage src="../fabrication/fabrication-top-image.jpg"/>
+            </div>
+            <h3>Let us turn your great idea into reality.</h3>
+            <p>From simple metal fabrication to building an entire electrical or hybrid proof-of-concept vehicle, we can build it for you right here in our shop. </p>
+          </div>
+          <div className="center-content btn-wrapper">
+            <Link to="/prototyping" className="btn">Learn More</Link>
           </div>
         </div>
       </SectionDark>
@@ -91,6 +94,8 @@ export const pageQuery = graphql`
           title
           name
           position
+          order
+          slug
           imageAltText
           image {
             childImageSharp {

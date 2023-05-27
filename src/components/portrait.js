@@ -5,14 +5,15 @@ import * as portraitCss from "./portrait.module.css"
 
 const Portrait = ({data}) => {
   const image = getImage(data.image)
+  console.log("slug", data)
   return (
-    <div className={portraitCss.teamMemberContainer}>
-      <Link href={`/team/${data.slug}`}>
+    <>
+      <Link href={`/team/${data.slug}`} className={portraitCss.teamMemberContainer}>
         <GatsbyImage image={image} alt={data.imageAlt} className={portraitCss.image}/>
+        <h3>{data.name}</h3>
+        <p className={portraitCss.position}>{data.position}</p>
       </Link>
-      <h3>{data.name}</h3>
-      <p className={portraitCss.position}>{data.position}</p>
-    </div>
+    </>
   )
 }
 

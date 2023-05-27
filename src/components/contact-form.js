@@ -10,11 +10,11 @@ const ContactForm = () => {
         name="subject" 
         value="JKV Engineering Website Contact Form" 
       />
-      <label htmlFor="name">Name</label>
+      <label htmlFor="name" className={contactFormStyles.label}>Name</label>
       <input name="name" type="text" required/>
-      <label htmlFor="email">Email</label>
+      <label htmlFor="email" className={contactFormStyles.label}>Email</label>
       <input name="email" type="email" required/>
-      <label htmlFor="message">Message</label>
+      <label htmlFor="message" className={contactFormStyles.label}>Message</label>
       <textarea name="message" rows="10" required/>
       <input name="submit" type="submit" value="Submit" className={`btn ${contactFormStyles.submitButton}`}/>
     </form>
