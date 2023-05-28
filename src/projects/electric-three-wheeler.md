@@ -1,5 +1,5 @@
 ---
-image: "./three-wheeler.jpg"
+image: "./threewheeler.jpg"
 imageAltText: "Electric Three Wheeler"
 title: "Electric Three Wheeler"
 category: "Projects"

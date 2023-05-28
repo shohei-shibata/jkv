@@ -19,9 +19,11 @@ const IndexPage = ({data}) => {
     <>
       <Slogan/>
       <SectionRegular sectionId="about">
+        <SectionTitle>What We Do</SectionTitle>
         <AboutSection services={services}/>
       </SectionRegular>
       <SectionDark sectionId="projects">
+        <SectionTitle>Recent Projects</SectionTitle>
         <ProjectsSection projects={projects}/>
       </SectionDark>
       <SectionYellow sectionId="section-cta-contact">

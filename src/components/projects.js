@@ -9,7 +9,6 @@ const ProjectsSection = ({projects}) => {
   return (
     <>
       <div className="content-wrapper-default-width">
-        <SectionTitle>Recent Projects</SectionTitle>
         <div className={projectsCss.galleryWrapper}>
           {projects.map((project, index) => (
             <Link to={`/projects/${project.frontmatter.slug}`}>
