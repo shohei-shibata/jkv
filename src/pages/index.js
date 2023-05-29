@@ -47,7 +47,7 @@ const IndexPage = ({data}) => {
             <p>From simple metal fabrication to building an entire proof-of-concept vehicle, we can build it for you right here in our shop. </p>
           </div>
           <div className="center-content btn-wrapper">
-            <Link to="/prototyping" className="btn">Learn More</Link>
+            <Link to="/about#fabrication" className="btn">Learn More</Link>
           </div>
         </div>
       </SectionDark>

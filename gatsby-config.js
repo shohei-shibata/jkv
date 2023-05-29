@@ -16,7 +16,15 @@ module.exports = {
       options: {
         "icon": "src/images/icon.png"
       }
-    }, "gatsby-plugin-mdx", "gatsby-plugin-sharp", "gatsby-transformer-sharp", {
+    }, 
+    {
+      resolve: `gatsby-plugin-mdx`,
+      options: {
+        defaultLayouts: {
+          default: require.resolve(`./src/components/mdx-wrapper.js`),
+        },
+      }
+    }, "gatsby-plugin-sharp", "gatsby-transformer-sharp", {
       resolve: 'gatsby-source-filesystem',
       options: {
         "name": "images",
@@ -58,6 +66,6 @@ module.exports = {
         "path": "./src/fabrication/"
       },
       __key: "fabrication"
-    },
+    }, 
   ]
 };
