@@ -1,0 +1,42 @@
+import MdxWrapper from "../components/mdx-wrapper"
+import { graphql } from "gatsby"
+import ProjectsSection from "../components/projects"
+
+export default ({children, data}) => {
+  console.log("DATA", data)
+  const projects = data.allMarkdownRemark.nodes
+  console.log("Projects", projects)
+  return (
+    <MdxWrapper
+      title="Projects"
+      projects={projects}
+    >{children}</MdxWrapper>
+  )
+}
+
+Here are some of our recent projects. Click on a project to read more.
+
+{projects.map(project => (
+  <h1>{project.title}</h1>
+))}
+
+export const pageQuery = graphql`
+  query GetAllProjects {
+    allMarkdownRemark(filter: {frontmatter: {category: {eq: "Projects"}}}) {
+      nodes {
+        html
+        frontmatter {
+          title
+          imageAltText
+          category
+          slug
+          image {
+            childImageSharp {
+              gatsbyImageData(width: 370)
+            }
+          }
+        }
+      }
+    }
+  }
+`
