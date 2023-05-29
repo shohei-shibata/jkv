@@ -10,7 +10,9 @@ const AboutSection = ({services}) => {
     <div className="content-wrapper-default-width">
       <div className={aboutCss.galleryWrapper}>
         {services.map((item, index) => (
-          <ImageOverlay key={`service-item-${index+1}`} data={item.frontmatter}/>
+          <Link to="/about">
+            <ImageOverlay key={`service-item-${index+1}`} data={item.frontmatter}/>
+          </Link>
         ))}
       </div>
       <div className="center-content btn-wrapper">

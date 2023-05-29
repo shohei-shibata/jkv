@@ -1,0 +1,17 @@
+import MdxWrapper from "../components/mdx-wrapper"
+import { graphql } from "gatsby"
+import TeamList from "../components/team"
+
+export default ({children}) => {
+  return (
+    <MdxWrapper
+      title="Our Team"
+    >{children}</MdxWrapper>
+  )
+}
+
+<div className="center-content">
+  <div style={{width: "900px", maxWidth: "100vw"}}>
+    <TeamList/>
+  </div>
+</div>

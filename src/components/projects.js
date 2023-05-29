@@ -1,11 +1,31 @@
 import React from "react"
-import SectionTitle from "./section-title"
 import * as projectsCss from "./projects.module.css"
 import ImageOverlay from "./image-overlay"
-import { Link } from "gatsby"
+import { Link, graphql, useStaticQuery } from "gatsby"
 
-const ProjectsSection = ({projects}) => {
-  console.log("projects", projects)
+const ProjectsSection = () => {
+  const data = useStaticQuery(graphql`
+    query getProjects {
+      allMarkdownRemark {
+        nodes {
+          frontmatter {
+            image {
+              childImageSharp {
+                id
+                gatsbyImageData(width: 370)
+              }
+            }
+            imageAltText
+            order
+            slug
+            title
+            category
+          }
+        }
+      }
+    }
+  `)
+  const projects = data.allMarkdownRemark.nodes.filter(node => node.frontmatter.category === "Projects")
   return (
     <>
       <div className="content-wrapper-default-width">

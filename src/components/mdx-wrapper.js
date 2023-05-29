@@ -3,7 +3,6 @@ import SectionTitle from "../components/section-title"
 import { Link, StaticImage } from "gatsby"
 
 const MdxWrapper = ({children, title}) => {
-  console.log("Data", title)
   return (
     <div className="content-wrapper-default-width page-content-wrapper">
       <SectionTitle>{title}</SectionTitle>
