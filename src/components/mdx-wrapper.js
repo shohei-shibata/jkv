@@ -1,6 +1,5 @@
 import React from "react"
 import SectionTitle from "../components/section-title"
-import { Link, StaticImage } from "gatsby"
 
 const MdxWrapper = ({children, title}) => {
   return (
@@ -8,9 +7,6 @@ const MdxWrapper = ({children, title}) => {
       <SectionTitle>{title}</SectionTitle>
       <div className="text-section-narrow-width">
         {children}
-      </div>
-      <div className="btn-multiple-wrapper">
-        <Link to="/" className="btn btn-yellow">Back to Home</Link>
       </div>
     </div>
   )

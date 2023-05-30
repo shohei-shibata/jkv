@@ -1,30 +1,29 @@
 import * as React from "react"
-import { Link, graphql } from "gatsby"
+import { Link } from "gatsby"
 import Slogan from "../components/slogan"
-import AboutSection from "../components/about"
-import ProjectsSection from "../components/projects"
+import ServicesList from "../components/services-list"
 import { SectionDark, SectionRegular, SectionYellow } from "../components/section-wrapper"
 import ContactForm from "../components/contact-form"
 import SectionTitle from "../components/section-title"
 import Portrait from "../components/portrait"
 import { StaticImage } from "gatsby-plugin-image"
+import Seo from "../components/seo"
+import { useTeamData } from "../hooks/use-team-data"
+import ProjectsList from "../components/projects-list"
+import GoogleMap from "../components/google-map"
 
-const IndexPage = ({data}) => {
-  const services = data.allMarkdownRemark.nodes.filter(item => item.frontmatter.category === "Services")
-  const projects = data.allMarkdownRemark.nodes.filter(item => item.frontmatter.category === "Projects")
-  const team = data.allMarkdownRemark.nodes.filter(item => item.frontmatter.category === "Team")
-    .sort((a, b) => b.frontmatter.order<a.frontmatter.order)
-  const fabrication = data.allMarkdownRemark.nodes.filter(item => item.frontmatter.category === "Fabrication")
+const IndexPage = () => {
+  const team = useTeamData()
   return (
     <>
       <Slogan/>
       <SectionRegular sectionId="about">
         <SectionTitle>What We Do</SectionTitle>
-        <AboutSection services={services}/>
+        <ServicesList/>
       </SectionRegular>
       <SectionDark sectionId="projects">
         <SectionTitle>Recent Projects</SectionTitle>
-        <ProjectsSection projects={projects}/>
+        <ProjectsList/>
       </SectionDark>
       <SectionYellow sectionId="section-cta-contact">
         <div className="content-wrapper-default-width">
@@ -63,18 +62,17 @@ const IndexPage = ({data}) => {
       </SectionRegular>
       <SectionDark sectionId="contact-us">
         <div className="content-wrapper-default-width">
-          <SectionTitle>Contact Us</SectionTitle>
+          <SectionTitle>How to Reach Us</SectionTitle>
           <div className="contact-row-1-container">
             <div className="contact-address">
               <h3>JKV ENGINEERING LLC</h3>
               <h3>789 U.S. 50</h3>
               <h3>Milford, OH 45150</h3>
             </div>
-            <ContactForm/>
+            <GoogleMap/>
           </div>
-          <div className="google-map-container">
-            <iframe title="google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1300.5705507545151!2d-84.26534586277937!3d39.16799655108178!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8840550de1e47f93%3A0xfefb543e9f31f3a5!2sJKV%20Engineering!5e0!3m2!1sen!2sus!4v1673966115245!5m2!1sen!2sus" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </div>
+          <h2>Contact Form</h2>
+          <ContactForm/>
         </div>
       </SectionDark>
     </>
@@ -83,28 +81,4 @@ const IndexPage = ({data}) => {
 
 export default IndexPage
 
-export const Head = () => <title>Home Page</title>
-
-
-export const pageQuery = graphql`
-  query GetAllServices {
-    allMarkdownRemark {
-      nodes {
-        frontmatter {
-          category
-          title
-          name
-          position
-          order
-          slug
-          imageAltText
-          image {
-            childImageSharp {
-              gatsbyImageData(width: 370)
-            }
-          }
-        }
-      }
-    }
-  }
-`
+export const Head = () => <Seo title="Home"/>

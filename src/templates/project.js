@@ -5,9 +5,7 @@ import * as projectStyle from "./project.module.css"
 import { Link } from "gatsby"
 
 const ProjectPageTemplate = ({pageContext}) => {
-  console.log("Page Data", pageContext)
   const { title, content, image, imageAltText } = pageContext
-  console.log("Image", image)
   return (
     <>
       <div className={`center-content ${projectStyle.featuredImage}`}>

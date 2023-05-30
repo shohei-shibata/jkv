@@ -2,17 +2,16 @@ import React from "react"
 import * as imageOverlayCss from "./image-overlay.module.css"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
-const ImageOverlay = ({data}) => {
-  const image = getImage(data.image)
+const ImageOverlay = ({image, altText, text}) => {
   return (
     <div className={imageOverlayCss.imageWrapper}>
       <GatsbyImage 
-        image={image} 
-        alt={data.imageAltText}
+        image={getImage(image)} 
+        alt={altText}
         className={imageOverlayCss.image}
       />
       <div className={imageOverlayCss.overlay}>
-        <h1>{data.title}</h1>
+        <h1>{text}</h1>
       </div>
     </div>
   )

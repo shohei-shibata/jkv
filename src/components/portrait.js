@@ -5,7 +5,6 @@ import * as portraitCss from "./portrait.module.css"
 
 const Portrait = ({data}) => {
   const image = getImage(data.image)
-  console.log("slug", data)
   return (
     <>
       <Link href={`/team/#${data.slug}`} className={portraitCss.teamMemberContainer}>

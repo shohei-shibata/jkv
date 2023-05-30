@@ -8,7 +8,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <nav className={nav}>
-        <Link to="/"><StaticImage src="../images/logo-nav.png" height={75}/></Link>
+        <Link to="/"><StaticImage src="../images/logo.png" height={75}/></Link>
         <ul>
           <li><Link to="/about">About</Link></li>
           <li><Link to="/projects">Projects</Link></li>
@@ -25,3 +25,10 @@ const Layout = ({ children }) => {
 }
 
 export default Layout
+
+export const Head = () => (
+  <>
+    <meta name="robots" content="noindex"></meta>
+    <title>JKV ENGINEERING</title>
+  </>
+)

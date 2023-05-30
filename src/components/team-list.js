@@ -1,37 +1,10 @@
 import React from "react"
-import { graphql, useStaticQuery } from "gatsby"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
-import * as teamStyle from "./team.module.css"
+import * as teamStyle from "./team-list.module.css"
+import { useTeamData } from "../hooks/use-team-data"
 
 const TeamList = () => {
-  const data = useStaticQuery(graphql`
-    query getTeamList {
-      allMarkdownRemark {
-        nodes {
-          html
-          frontmatter {
-            image {
-              childImageSharp {
-                id
-                gatsbyImageData(width: 370)
-              }
-            }
-            imageAltText
-            order
-            slug
-            name
-            position
-            category
-          }
-        }
-      }
-    }
-  `)
-  const team = data.allMarkdownRemark.nodes.filter(
-    node => node.frontmatter.category === "Team"
-  ).sort(
-    (a,b) => a.frontmatter.order>b.frontmatter.order
-  )
+  const team = useTeamData()
   return (
     <>
       <div className="content-wrapper-default-width">

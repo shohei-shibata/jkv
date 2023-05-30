@@ -3,8 +3,11 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `JKV Engineering LLC`,
-    siteUrl: `https://www.yourdomain.tld`
+    title: `JKV ENGINEERING`,
+    description: `Engineering contractor in Milford Ohio, specializing in systems engineering design and rapid prototype solutions.`,
+    twitterUsername: `@JkvEngineering`,
+    image: `/images/logo.png`,
+    siteUrl: `https://jkvengineering.com`,
   },
   plugins: [
     /*"gatsby-plugin-google-gtag", */
@@ -17,14 +20,7 @@ module.exports = {
         "icon": "src/images/icon.png"
       }
     }, 
-    {
-      resolve: `gatsby-plugin-mdx`,
-      options: {
-        defaultLayouts: {
-          default: require.resolve(`./src/components/mdx-wrapper.js`),
-        },
-      }
-    }, "gatsby-plugin-sharp", "gatsby-transformer-sharp", {
+    `gatsby-plugin-mdx`, "gatsby-plugin-sharp", "gatsby-transformer-sharp", {
       resolve: 'gatsby-source-filesystem',
       options: {
         "name": "images",
@@ -59,13 +55,6 @@ module.exports = {
         "path": "./src/team/"
       },
       __key: "team"
-    }, {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        "name": "fabrication",
-        "path": "./src/fabrication/"
-      },
-      __key: "fabrication"
-    }, 
+    },
   ]
 };

@@ -1,6 +1,7 @@
 import MdxWrapper from "../components/mdx-wrapper"
-import { graphql } from "gatsby"
-import TeamList from "../components/team"
+import TeamList from "../components/team-list"
+import Seo from "../components/seo"
+export const Head = () => <Seo title="Team"/>
 
 export default ({children}) => {
   return (

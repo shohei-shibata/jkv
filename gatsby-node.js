@@ -35,7 +35,6 @@ exports.createPages = ({ graphql, actions }) => {
         image: node.frontmatter.image,
         imageAltText: node.frontmatter.imageAltText
       }
-      console.log("Page Path", `projects/${node.frontmatter.slug}`)
       createPage({
         // Path for this page — required
         path: `projects/${node.frontmatter.slug}`,
