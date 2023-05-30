@@ -29,7 +29,7 @@ const IndexPage = () => {
         <div className="content-wrapper-default-width">
           <h1 className="cta-text">Talk to us about your next project</h1>
           <div className="center-content btn-wrapper">
-            <Link href="/contact" className="btn centered">
+            <Link to="/contact" className="btn centered">
               Contact Us
             </Link>
           </div>
