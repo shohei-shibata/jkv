@@ -40,7 +40,7 @@ const IndexPage = () => {
           <SectionTitle>Fabrication Capabilities</SectionTitle>
           <div className="text-section-narrow-width">
             <div className="center-content">
-              <StaticImage src="../fabrication/fabrication-top-image.jpg"/>
+              <StaticImage src="../images/fabrication-1.jpg"/>
             </div>
             <h3>Let us turn your great idea into reality.</h3>
             <p>From simple metal fabrication to building an entire proof-of-concept vehicle, we can build it for you right here in our shop. </p>
