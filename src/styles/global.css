@@ -18,6 +18,10 @@ nav {
 p {
   line-height: 1.5em;
 }
+textarea {
+  overflow-y: scroll;
+  resize: none;
+}
 .btn {
   background-color: var(--background-color-light);
   border: none;
