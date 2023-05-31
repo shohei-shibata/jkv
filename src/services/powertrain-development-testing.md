@@ -1,7 +1,7 @@
 ---
 image: "./services-4.jpg"
 imageAltText: "Battery Pack"
-title: "Powertrain Development Testing"
+title: "Systems Engineering"
 category: "Services"
 order: 3
 ---

@@ -1,7 +1,7 @@
 ---
 image: "./services-3.jpg"
 imageAltText: "Car Engine"
-title: "Internal Combustion Engine Integration & Adaptation"
+title: "Rapid, Engineered, Prototypes"
 category: "Services"
 order: 2
 ---

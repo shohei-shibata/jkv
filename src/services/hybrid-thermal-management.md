@@ -1,9 +1,9 @@
 ---
 image: "./services-1.jpg"
 imageAltText: "Hybrid Corvette"
-title: "Hybrid Thermal Management"
+title: "Engineering Services"
 category: "Services"
 order: 1
 ---
 
-JKV Engineering has extensive experience developing fluid power and fluid conveyance systems for a variety of applications. We have designed and implemented systems including brewery “Clean in Place” systems, hybrid vehicle fuel systems, and hydro-pneumatic energy recovery for heavy duty hybrid vehicles. We’ve applied all of this experience to the design of thermal management systems for electric and hybrid electric vehicles. The cost, reliability, and efficiency of these systems has an enormous bearing on those parameters for the overall vehicle.
+where our experience base enhances our client’s engineering team. In these type of engagements we support our customer’s development from concept selection through design for manufacturing. Our activities as an engineering service provider include development of concept selection matrices, 3D CAD modeling, CAE (simulation and mathematical modeling), DFMEA, BOMs, Drawing packages, test plans/physical testing, and more. We’ve worked with clients around the US and globally, on multiple year engineering programs.

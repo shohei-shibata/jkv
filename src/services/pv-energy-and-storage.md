@@ -1,7 +1,7 @@
 ---
 image: "./services-2.jpg"
 imageAltText: "Solar Panel"
-title: "PV Energy & Storage"
+title: "Fabrication Capabilities"
 category: "Services"
 order: 4
 ---

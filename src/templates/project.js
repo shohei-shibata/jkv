@@ -3,6 +3,9 @@ import SectionTitle from "../components/section-title"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import * as projectStyle from "./project.module.css"
 import { Link } from "gatsby"
+import Seo from "../components/seo"
+
+export const Head = ({pageContext}) => <Seo title={pageContext.title}/>
 
 const ProjectPageTemplate = ({pageContext}) => {
   const { title, content, image, imageAltText } = pageContext

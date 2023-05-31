@@ -4,7 +4,7 @@ position: "Position Title"
 image: "./portrait_placeholder.png"
 imageAltText: "Portrait Placeholder Image"
 slug: "shohei"
-order: 5
+order: 6
 category: "Team"
 ---
 
