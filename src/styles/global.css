@@ -6,6 +6,7 @@
   --background-color-dark: #222;
   --background-color-yellow: #DCAB4E;
   --background-dark-shadow: rgba(0, 0, 0, 0.1) 0px 0px 125px 100px inset;
+  --mobile-trigger-width: 768px;
 }
 html, body {
   margin: 0;
@@ -17,6 +18,15 @@ nav {
 }
 p {
   line-height: 1.5em;
+}
+a {
+  text-decoration: underline;
+}
+ul {
+  padding-left: 20px;
+}
+li {
+  list-style-type: disc;
 }
 textarea {
   overflow-y: scroll;
@@ -81,6 +91,7 @@ section {
 .content-wrapper-default-width {
   max-width: 900px;
   margin: 0 auto;
+  padding: 0 5px;
 }
 .contact-row-1-container {
   display: grid;
@@ -88,8 +99,14 @@ section {
   gap: 30px;
   margin: 15px 0;
 }
+@media screen and (max-width: 768px) {
+  .contact-row-1-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .page-content-wrapper {
-  padding: 50px 0;
+  padding: 50px 5px;
 }
 .cta-text {
   text-align: center;

@@ -1,21 +1,12 @@
 import * as React from 'react'
-import { Link } from 'gatsby'
-import { StaticImage } from 'gatsby-plugin-image'
 import Footer from './footer'
-import { nav, main } from './layout.module.css'
+import { main } from './layout.module.css'
+import Nav from './nav'
 
 const Layout = ({ children }) => {
   return (
     <>
-      <nav className={nav}>
-        <Link to="/"><StaticImage src="../images/logo.png" height={75}/></Link>
-        <ul>
-          <li><Link to="/about">About</Link></li>
-          <li><Link to="/projects">Projects</Link></li>
-          <li><Link to="/team">Our Team</Link></li>
-          <li><Link to="/contact">Contact</Link></li>
-        </ul>
-      </nav>
+      <Nav/>
       <main className={main}>
         {children}
       </main>

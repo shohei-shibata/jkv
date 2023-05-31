@@ -35,21 +35,6 @@ const IndexPage = () => {
           </div>
         </div>
       </SectionYellow>
-      <SectionDark sectionId="prototyping">
-        <div className="content-wrapper-default-width">
-          <SectionTitle>Fabrication Capabilities</SectionTitle>
-          <div className="text-section-narrow-width">
-            <div className="center-content">
-              <StaticImage src="../images/fabrication-1.jpg"/>
-            </div>
-            <h3>Let us turn your great idea into reality.</h3>
-            <p>From simple metal fabrication to building an entire proof-of-concept vehicle, we can build it for you right here in our shop. </p>
-          </div>
-          <div className="center-content btn-wrapper">
-            <Link to="/about#fabrication" className="btn">Learn More</Link>
-          </div>
-        </div>
-      </SectionDark>
       <SectionRegular sectionId="our-team">
         <div className="content-wrapper-default-width">
           <SectionTitle>Our Team</SectionTitle>

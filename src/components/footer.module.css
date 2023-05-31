@@ -8,6 +8,12 @@
   justify-content: center;
   gap: 20px;
 }
+@media screen and (max-width: 768px) {
+  .footer ul {
+    flex-direction: column;
+    align-items: baseline;
+  }
+}
 .footer a {
   color: var(--font-color-light);
 }
