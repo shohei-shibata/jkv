@@ -16,7 +16,7 @@ const ProjectPageTemplate = ({pageContext}) => {
       </div>
       <div className={`content-wrapper-default-width ${projectStyle.mainContentWrapper}`}>
         <SectionTitle>{title}</SectionTitle>
-        <div dangerouslySetInnerHTML={{__html: content}}/>
+        <div dangerouslySetInnerHTML={{__html: content}} className="text-section-narrow-width"/>
         <div className="btn-multiple-wrapper">
           <Link to="/" className="btn btn-yellow">Back to Home</Link>
           <Link to="/projects" className="btn btn-yellow">View Other Projects</Link>

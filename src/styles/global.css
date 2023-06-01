@@ -2,6 +2,7 @@
   --yellow: #DCAB4E;
   --font-color-light: #fff;
   --font-color-dark: #222;
+  --font-color-gray: #444;
   --background-color-light: #fff;
   --background-color-dark: #222;
   --background-color-yellow: #DCAB4E;
@@ -36,10 +37,17 @@ ul {
 }
 li {
   list-style-type: disc;
+  line-height: 1.5em;
 }
 textarea {
   overflow-y: scroll;
   resize: none;
+}
+figcaption {
+  text-align: center;
+  line-height: 1.5em;
+  font-style: italic;
+  color: var(--font-color-gray);
 }
 .btn {
   background-color: var(--background-color-light);
@@ -127,7 +135,7 @@ section {
   align-items: center;
 }
 .text-section-narrow-width {
-  max-width: 600px;
+  max-width: 700px;
   margin: auto;
 }
 .team-portraits-wrapper {

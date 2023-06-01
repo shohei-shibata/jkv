@@ -13,7 +13,21 @@ module.exports = {
     /*"gatsby-plugin-google-gtag", */
     "gatsby-plugin-image", 
     "gatsby-plugin-sitemap", 
-    "gatsby-transformer-remark", 
+    {
+      resolve: "gatsby-transformer-remark", 
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 500,
+              showCaptions: true,
+              withWebp: true,
+            },
+          },
+        ]
+      }
+    },
     {
       resolve: 'gatsby-plugin-manifest',
       options: {

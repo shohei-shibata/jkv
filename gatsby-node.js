@@ -27,7 +27,7 @@ exports.createPages = ({ graphql, actions }) => {
       throw result.errors
     }
 
-    // Create blog post pages.
+    // Create project post pages.
     result.data.allMarkdownRemark.nodes.forEach(node => {
       const data = {
         title: node.frontmatter.title,

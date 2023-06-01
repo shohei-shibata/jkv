@@ -1,7 +1,7 @@
 ---
 image: "./services-4.jpg"
 imageAltText: "Solar Panel"
-title: "Fabrication Capabilities"
+title: "Fabrication Services"
 category: "Services"
 order: 4
 ---
