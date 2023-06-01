@@ -11,12 +11,12 @@ const TeamList = () => {
         <div className="gallery-wrapper">
           {team.map(person => (
             <div className={teamStyle.teamMemberWrapper} id={`${person.frontmatter.slug}`}>
-              <div className={`center-content ${teamStyle.teamMemberCenteredContent}`}>
+              <div className={teamStyle.teamMemberPhoto}>
                 <GatsbyImage image={getImage(person.frontmatter.image)}/>
                 <h2>{person.frontmatter.name}</h2>
                 <h3 style={{textAlign: "center"}}>{person.frontmatter.position}</h3>
               </div>
-              <div dangerouslySetInnerHTML={{__html: person.html}}/>
+              <div className={teamStyle.teamMemberText} dangerouslySetInnerHTML={{__html: person.html}}/>
             </div>
           ))}
         </div>

@@ -8,4 +8,4 @@ order: 3
 category: "Team"
 ---
 
-He's alright
+Bio coming soon

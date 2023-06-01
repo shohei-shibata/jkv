@@ -8,8 +8,26 @@ order: 1
 category: "Team"
 ---
 
-Jude Hueber is the Principal Engineer and Owner of JKV Engineering LLC, a company that specializes in automotive and power systems engineering.
+Jude Hueber graduated from Colorado State University in 2006 with a B.S. in mechanical engineering.  In college he became interested in robotics, and his first job was designing remotely operated equipment for Nuclear D&D projects.  A lifelong automotive enthusiast, Jude jumped at an opportunity to lead the engineering team for a start-up company that was developing new drive-train technology for heavy trucks.  This started his career in automotive and ultimately led to the founding of JKV as an engineering consulting company for special automotive projects.  In his free time, Jude enjoys building things for his wife's garden, being outside with his kids, and maintaining a 74 acre farm in Batavia, OH.  He is a mediocre musician, rock climber, and motorcycle rider when time affords.
 
-He became interested in systems engineering while taking mechatronics and controls courses at Colorado State University where he received a B.S. Mechanical Engineering in 2006.
+### Fun Facts
 
-Jude then started his career designing robotic equipment for nuclear decommissioning and decontamination work at SA Robotics. During that time, each project that he was involved with had equal parts mechanical design, electrical or hydraulic design, and control systems work. This experience with whole systems engineering allowed Jude and JKV to tackle larger projects in automotive power-train systems.
+#### Q: Cats or Dogs?
+
+A: Dogs
+
+#### Q: If I weren't so damn good at my job, I'd probably be...
+
+A: Trying to get paid to ride motorcycles
+
+#### Q: Favorite sports team?
+
+A: The Underdogs
+
+#### Q: Do you volunteer? If so, where?
+
+A: Enjoys introducing people to the outdoors
+
+#### Q: Favorite travel destination that you've been to, or you want to go?
+
+A: Climbing in Southern France

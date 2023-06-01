@@ -8,4 +8,4 @@ order: 5
 category: "Team"
 ---
 
-Not a bad guy
+Bio coming soon

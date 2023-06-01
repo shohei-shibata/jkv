@@ -8,4 +8,4 @@ order: 6
 category: "Team"
 ---
 
-The best engineer at JKV
+Bio coming soon
