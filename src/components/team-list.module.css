@@ -18,9 +18,3 @@
 .team-member-centered-content h2 {
   margin-bottom: 0;
 }
-.gallery-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 25px;
-  justify-content: center;
-}

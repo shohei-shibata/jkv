@@ -3,10 +3,8 @@ import { Link } from "gatsby"
 import Slogan from "../components/slogan"
 import ServicesList from "../components/services-list"
 import { SectionDark, SectionRegular, SectionYellow } from "../components/section-wrapper"
-import ContactForm from "../components/contact-form"
 import SectionTitle from "../components/section-title"
 import Portrait from "../components/portrait"
-import { StaticImage } from "gatsby-plugin-image"
 import Seo from "../components/seo"
 import { useTeamData } from "../hooks/use-team-data"
 import ProjectsList from "../components/projects-list"
@@ -50,14 +48,14 @@ const IndexPage = () => {
           <SectionTitle>How to Reach Us</SectionTitle>
           <div className="contact-row-1-container">
             <div className="contact-address">
-              <h3>JKV ENGINEERING LLC</h3>
+              <h3>JKV ENGINEERING</h3>
               <h3>789 U.S. 50</h3>
               <h3>Milford, OH 45150</h3>
+              <br/>
+              <Link to="/contact#contact-form" className="btn btn-yellow">Send Us a Message</Link>
             </div>
             <GoogleMap/>
           </div>
-          <h2>Contact Form</h2>
-          <ContactForm/>
         </div>
       </SectionDark>
     </>

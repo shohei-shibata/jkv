@@ -3,7 +3,7 @@ import * as contactFormStyles from "./contact-form.module.css"
 
 const ContactForm = () => {
   return (
-    <form action='/success' className={contactFormStyles.form} method='POST' name='contact-form'>
+    <form id="contact-form" action='/success' className={contactFormStyles.form} method='POST' name='contact-form'>
       <input type='hidden' name='form-name' value='contact-form' />
       <input 
         type="hidden" 

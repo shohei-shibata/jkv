@@ -8,7 +8,7 @@ const TeamList = () => {
   return (
     <>
       <div className="content-wrapper-default-width">
-        <div className={teamStyle.galleryWrapper}>
+        <div className="gallery-wrapper">
           {team.map(person => (
             <div className={teamStyle.teamMemberWrapper} id={`${person.frontmatter.slug}`}>
               <div className={`center-content ${teamStyle.teamMemberCenteredContent}`}>

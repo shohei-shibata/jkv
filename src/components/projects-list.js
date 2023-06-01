@@ -1,5 +1,4 @@
 import React from "react"
-import * as projectsCss from "./projects-list.module.css"
 import ImageOverlay from "./image-overlay"
 import { Link } from "gatsby"
 import { useProjectsData } from "../hooks/use-projects-data"
@@ -9,7 +8,7 @@ const ProjectsList = () => {
   return (
     <>
       <div className="content-wrapper-default-width">
-        <div className={projectsCss.galleryWrapper}>
+        <div className="gallery-wrapper">
           {projects.map((project, index) => (
             <Link to={`/projects/${project.frontmatter.slug}`}>
               <ImageOverlay key={`project-${index+1}`} 
