@@ -1,5 +1,5 @@
 ---
-image: "./services-1.jpg"
+image: "../images/services-1.jpg"
 imageAltText: "Hybrid Corvette"
 title: "Engineering Services"
 category: "Services"

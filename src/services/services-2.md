@@ -1,5 +1,5 @@
 ---
-image: "./services-2.jpg"
+image: "../images/services-2.jpg"
 imageAltText: "Car Engine"
 title: "Rapid, Engineered, Prototypes"
 category: "Services"

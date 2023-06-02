@@ -20,6 +20,10 @@ export const useTeamData = () => {
             slug
             name
             position
+            funFacts {
+              a
+              q
+            }
           }
         }
       }

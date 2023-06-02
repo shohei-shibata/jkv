@@ -1,5 +1,5 @@
 ---
-image: "./services-4.jpg"
+image: "../images/services-4.jpg"
 imageAltText: "Solar Panel"
 title: "Fabrication Services"
 category: "Services"

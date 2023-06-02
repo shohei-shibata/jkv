@@ -1,5 +1,5 @@
 ---
-image: "./services-3.jpg"
+image: "../images/services-3.jpg"
 imageAltText: "Battery Pack"
 title: "Systems Engineering"
 category: "Services"

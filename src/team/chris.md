@@ -1,7 +1,7 @@
 ---
 name: "Chris Pennekamp"
 position: "Program Manager and Systems Engineer"
-image: "./portrait_chris_pennekamp.jpg"
+image: "../images/portrait_chris_pennekamp.jpg"
 imageAltText: "Chris Portrait"
 slug: "chris"
 order: 2

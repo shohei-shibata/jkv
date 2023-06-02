@@ -1,10 +1,10 @@
 ---
-name: "Shohei Shibata"
+name: "Don Bierman"
 position: "Position Title"
-image: "./portrait_placeholder.png"
+image: "../images/portrait_placeholder.png"
 imageAltText: "Portrait Placeholder Image"
-slug: "shohei"
-order: 6
+slug: "don"
+order: 5
 category: "Team"
 ---
 

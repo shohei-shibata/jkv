@@ -34,7 +34,21 @@ module.exports = {
         "icon": "src/images/icon.png"
       }
     }, 
-    `gatsby-plugin-mdx`, "gatsby-plugin-sharp", "gatsby-transformer-sharp", {
+    {
+      resolve: `gatsby-plugin-mdx`,
+      options: {
+        gatsbyRemarkPlugins: [
+          {
+            resolve: 'gatsby-remark-images',
+            options: {
+              maxWidth: 500,
+              showCaptions: true,
+              withWebp: true,
+            },
+          }
+        ]
+      }
+    }, "gatsby-plugin-sharp", "gatsby-transformer-sharp", {
       resolve: 'gatsby-source-filesystem',
       options: {
         "name": "images",
@@ -45,28 +59,32 @@ module.exports = {
       resolve: 'gatsby-source-filesystem',
       options: {
         "name": "pages",
-        "path": "./src/pages/"
+        "path": "./src/pages/",
+        "ignore": process.env.NODE_ENV === `production` && [`**/_*`]
       },
       __key: "pages"
     }, {
     resolve: 'gatsby-source-filesystem',
     options: {
       "name": "services",
-      "path": "./src/services/"
+      "path": "./src/services/",
+      "ignore": process.env.NODE_ENV === `production` && [`**/_*`]
     },
     __key: "services"
     }, {
       resolve: 'gatsby-source-filesystem',
       options: {
         "name": "projects",
-        "path": "./src/projects/"
+        "path": "./src/projects/",
+        "ignore": process.env.NODE_ENV === `production` && [`**/_*`]
       },
       __key: "projects"
     }, {
       resolve: 'gatsby-source-filesystem',
       options: {
         "name": "team",
-        "path": "./src/team/"
+        "path": "./src/team/",
+        "ignore": process.env.NODE_ENV === `production` && [`**/_*`]
       },
       __key: "team"
     },

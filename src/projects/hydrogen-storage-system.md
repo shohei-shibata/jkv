@@ -1,5 +1,5 @@
 ---
-image: "./hydrogen-on-crane.jpg"
+image: "../images/hydrogen-on-crane.jpg"
 imageAltText: "Hydrogen Storage Container"
 title: "Hydrogen Storage System"
 category: "Projects"
@@ -10,7 +10,7 @@ slug: "hydrogen-storage-system"
 
 [Steelhead Composites](https://steelheadcomposites.com/hydrogen-storage/), based in Wheat Ridge, Colorado, develops and manufactures Composite Overwrapped Pressure Vessels (COPVs) of wide-ranging sizes for storing hydrogen and other gases. They had an idea to build a hydrogen storage system based on an ISO shipping container, but needed a partner who can design and build such a system...
 
-![Image of the containerized hydrogen storage system (Image courtesy of Steelhead Composites)](./HydrogenCube-Plus-Containerized-Hydrogen-Storage-1.jpg)
+![Image of the containerized hydrogen storage system (Image courtesy of Steelhead Composites)](../images/HydrogenCube-Plus-Containerized-Hydrogen-Storage-1.jpg)
 
 # Collaboration
 
@@ -20,10 +20,10 @@ JKV's system design and fabrication capabilities were a great fit to Steelhead's
 
 The design process started sometime in the Spring of 2022. And in April of 2023, JKV successfully built and delivered the first example of the system.
 
-![CAD design of the Hydrogen System 1](./hydrogen-cad-1.jpg)
-![CAD design of the Hydrogen System 2](./hydrogen-cad-2.jpg)
-![Hydrogen System completed manifold](./hydrogen-manifold.jpg)
-![Hydrogen System complete and ready to ship](./hydrogen-on-crane.jpg)
+![CAD design of the Hydrogen System 1](../images/hydrogen-cad-1.jpg)
+![CAD design of the Hydrogen System 2](../images/hydrogen-cad-2.jpg)
+![Hydrogen System completed manifold](../images/hydrogen-manifold.jpg)
+![Hydrogen System complete and ready to ship](../images/hydrogen-on-crane.jpg)
 
 Along the way, we learned so much about how to...
 
@@ -31,9 +31,9 @@ Along the way, we learned so much about how to...
 * Design the plumbing system for ease of assembly, and how to properly assemble 
 * Test the system to ensure that the system is completely leak-proof
 
-![Internal Plumbing Work](./hydrogen_internal_plumbing.jpg)
+![Internal Plumbing Work](../images/hydrogen_internal_plumbing.jpg)
 
-![Hydrogen System Testing Setup](./hydrogen_testing.jpg)
+![Hydrogen System Testing Setup](../images/hydrogen_testing.jpg)
 
 # What's Next?
 
