@@ -60,7 +60,7 @@ module.exports = {
       options: {
         "name": "pages",
         "path": "./src/pages/",
-        "ignore": process.env.NODE_ENV === `production` && [`**/_*`]
+        "ignore": [`**/_*`]
       },
       __key: "pages"
     }, {
@@ -68,7 +68,7 @@ module.exports = {
     options: {
       "name": "services",
       "path": "./src/services/",
-      "ignore": process.env.NODE_ENV === `production` && [`**/_*`]
+      "ignore": [`**/_*`]
     },
     __key: "services"
     }, {
@@ -76,7 +76,7 @@ module.exports = {
       options: {
         "name": "projects",
         "path": "./src/projects/",
-        "ignore": process.env.NODE_ENV === `production` && [`**/_*`]
+        "ignore": [`**/_*`]
       },
       __key: "projects"
     }, {
@@ -84,7 +84,7 @@ module.exports = {
       options: {
         "name": "team",
         "path": "./src/team/",
-        "ignore": process.env.NODE_ENV === `production` && [`**/_*`]
+        "ignore": [`**/_*`]
       },
       __key: "team"
     },
