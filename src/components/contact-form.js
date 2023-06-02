@@ -3,7 +3,15 @@ import * as contactFormStyles from "./contact-form.module.css"
 
 const ContactForm = () => {
   return (
-    <form id="contact-form" action='/success' className={contactFormStyles.form} method='POST' name='contact-form'>
+    <form 
+      id="contact-form" 
+      action='/success' 
+      className={contactFormStyles.form} 
+      method='POST' 
+      name='jkv-contact-form'
+      data-netlify="true"
+      data-netlify-recaptcha="true"
+    >
       <input type='hidden' name='form-name' value='contact-form' />
       <input 
         type="hidden" 
