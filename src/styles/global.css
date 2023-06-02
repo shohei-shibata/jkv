@@ -75,6 +75,7 @@ a.btn-yellow {
 }
 .btn:hover {
   opacity: 0.9;
+  cursor: pointer;
 }
 .btn-wrapper {
   margin: 30px 0;
