@@ -1,6 +1,6 @@
 ---
 name: "Shohei Shibata"
-position: "Position Title"
+position: "Senior Engineer"
 image: "../images/portrait_placeholder.png"
 imageAltText: "Portrait Placeholder Image"
 slug: "shohei"
