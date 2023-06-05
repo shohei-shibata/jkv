@@ -59,6 +59,7 @@ figcaption {
   font-size: 1.2em;
   text-transform: uppercase;
   text-align: center;
+  transition: opacity .1s;
 }
 a.btn {
   text-decoration: none;

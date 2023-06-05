@@ -10,6 +10,7 @@
   width: 370px;
   height: 370px;
   max-width: 100vw;
+  transition: opacity 0.1s;
 }
 .image-wrapper:hover {
   opacity: 0.9;

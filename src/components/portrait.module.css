@@ -5,7 +5,8 @@
   width: 250px;
   text-align: center;
   text-decoration: none;
-  color: var(--font-color-dark)
+  color: var(--font-color-dark);
+  transition: opacity 0.1s;
 }
 .team-member-container:hover {
   opacity: 0.9;
