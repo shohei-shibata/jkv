@@ -31,9 +31,8 @@ const ContactForm = () => {
       <input 
         type="submit"
         className={`btn btn-yellow ${contactFormStyles.submitButton}`}
-      >
-        Submit
-      </input>
+        value="Submit"
+      />
     </form>
   )
 }
