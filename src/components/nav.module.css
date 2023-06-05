@@ -53,6 +53,7 @@
 }
 .mobile-nav ul {
   flex-grow: 1;
+  margin-bottom: 0;
 }
 .mobile-nav li {
   padding: 20px;
@@ -77,6 +78,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.nav-btn-wrapper svg {
+  width: 30px;
+  height: 30px;
+  margin: 20px;
 }
 .open-button, 
 .close-button {
