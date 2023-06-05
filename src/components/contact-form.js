@@ -8,7 +8,7 @@ const ContactForm = () => {
       action='/success' 
       className={contactFormStyles.form} 
       method='POST' 
-      name='jkv-contact-form'
+      name='contact-form'
       data-netlify="true"
       data-netlify-recaptcha="true"
     >
@@ -16,7 +16,7 @@ const ContactForm = () => {
       <input 
         type="hidden" 
         name="subject" 
-        value="JKV Engineering Website Contact Form" 
+        value="contact-form" 
       />
       <label htmlFor="name" className={contactFormStyles.label}>Name</label>
       <input name="name" type="text" required/>
