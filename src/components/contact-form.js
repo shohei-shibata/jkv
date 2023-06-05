@@ -10,6 +10,7 @@ const ContactForm = () => {
       name='contact-form'
       data-netlify="true"
       data-netlify-honeypot="bot-field"
+      action="/success"
     >
       <input type='hidden' name='form-name' value='contact-form' />
       <label htmlFor="bot-field" className={contactFormStyles.label} hidden>
