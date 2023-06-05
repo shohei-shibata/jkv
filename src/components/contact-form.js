@@ -5,7 +5,7 @@ const ContactForm = () => {
   return (
     <form 
       id="contact-form" 
-      method='POST' 
+      method='post' 
       className={contactFormStyles.form} 
       name='contact-form'
       data-netlify="true"
@@ -28,12 +28,12 @@ const ContactForm = () => {
         Message
         <textarea name="message" rows="10" required/>
       </label>
-      <input 
-        name="submit" 
-        type="submit" 
-        value="Submit" 
+      <button 
+        type="submit"
         className={`btn btn-yellow ${contactFormStyles.submitButton}`}
-      />
+      >
+        Submit
+      </button>
     </form>
   )
 }
