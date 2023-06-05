@@ -14,7 +14,7 @@ const ContactForm = () => {
       <input type='hidden' name='form-name' value='contact-form' />
       <label htmlFor="bot-field" className={contactFormStyles.label} hidden>
         Don't fill this out
-        <input name="botfield" type="text" required/>
+        <input name="bot-field" type="text"/>
       </label>
       <label htmlFor="name" className={contactFormStyles.label}>
         Name
@@ -28,12 +28,12 @@ const ContactForm = () => {
         Message
         <textarea name="message" rows="10" required/>
       </label>
-      <button 
+      <input 
         type="submit"
         className={`btn btn-yellow ${contactFormStyles.submitButton}`}
       >
         Submit
-      </button>
+      </input>
     </form>
   )
 }
