@@ -4,6 +4,7 @@ import * as teamStyle from "./team-list.module.css"
 import { useTeamData } from "../hooks/use-team-data"
 
 const BioPattern = ({person, index}) => {
+  const hasFunFacts = person.frontmatter.funFacts
   if (index % 2 === 0) {
     return (
       <div>
@@ -14,17 +15,20 @@ const BioPattern = ({person, index}) => {
             <h3>{person.frontmatter.position}</h3>
           </div>
         </div>
-        <div className={teamStyle.textWrapperA}>
+        <div className={`${teamStyle.textWrapperA} ${hasFunFacts ? "" : teamStyle.noFunFacts}`}>
           <div dangerouslySetInnerHTML={{__html: person.html}}/>
-          <div className={teamStyle.funFacts}>
-            <h3>Fun Facts</h3>
-            {person.frontmatter.funFacts?.map(fact => (
-              <>
-                <h4>Q: {fact.q}</h4>
-                <p>A: {fact.a}</p>
-              </>
-            ))}
-          </div>
+          {person.frontmatter.funFacts ? 
+            <div className={teamStyle.funFacts}>
+              <h3>Fun Facts</h3>
+              {person.frontmatter.funFacts.map(fact => (
+                <>
+                  <h4>Q: {fact.q}</h4>
+                  <p>A: {fact.a}</p>
+                </>
+              ))}
+            </div>
+            : null
+          }
         </div>
       </div>
     )
@@ -38,16 +42,19 @@ const BioPattern = ({person, index}) => {
         </div>
         <GatsbyImage image={getImage(person.frontmatter.image)}/>
       </div>
-      <div className={teamStyle.textWrapperB}>
-        <div className={teamStyle.funFacts}>
-          <h3>Fun Facts</h3>
-          {person.frontmatter.funFacts?.map(fact => (
-            <>
-              <h4>Q: {fact.q}</h4>
-              <p>A: {fact.a}</p>
-            </>
-          ))}
-        </div>
+      <div className={`${teamStyle.textWrapperB} ${hasFunFacts ? "" : teamStyle.noFunFacts}`}>
+        {person.frontmatter.funFacts ? 
+          <div className={teamStyle.funFacts}>
+            <h3>Fun Facts</h3>
+            {person.frontmatter.funFacts.map(fact => (
+              <>
+                <h4>Q: {fact.q}</h4>
+                <p>A: {fact.a}</p>
+              </>
+            ))}
+          </div>
+          : null
+        }
         <div dangerouslySetInnerHTML={{__html: person.html}}/>
       </div>
     </div>

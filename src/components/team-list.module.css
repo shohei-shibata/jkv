@@ -39,6 +39,9 @@
   grid-template-columns: 300px 1fr;
   gap: 35px;
 }
+.no-fun-facts {
+  grid-template-columns: 1fr;
+}
 .fun-facts {
   font-size: 0.85em;
   padding: 15px;
