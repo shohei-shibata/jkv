@@ -1,6 +1,7 @@
 import { Link } from "gatsby"
 import MdxWrapper from "../components/mdx-wrapper"
 import Seo from "../components/seo"
+import successGif from "../images/success.gif"
 export const Head = () => <Seo title="Form Submitted"/>
 export default ({children}) => <MdxWrapper title="Form Submitted">{children}</MdxWrapper>
 
@@ -8,6 +9,13 @@ export default ({children}) => <MdxWrapper title="Form Submitted">{children}</Md
 
 Your message has been submitted successfully. We will reach out to you as soon as we can!
 
-![](../images/success.gif)
+<div className="center-content">
+  <img src={successGif} alt="A happy guy" style={{
+    width: "300px",
+    margin: "30px"
+  }}/>
+</div>
 
-<Link to="/" className="btn btn-yellow">Go Home</Link>
+<div className="btn-wrapper">
+  <Link to="/" className="btn btn-yellow">Go Home</Link>
+</div>

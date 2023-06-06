@@ -12,6 +12,9 @@
   max-width: 100vw;
   transition: opacity 0.1s;
 }
+.image-wrapper img {
+  filter: brightness(0.8);
+}
 .image-wrapper:hover {
   opacity: 0.9;
 }
