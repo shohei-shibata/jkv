@@ -11,7 +11,7 @@ const BioPattern = ({person, index}) => {
         <div className={teamStyle.photoTitleWrapperA} id={`${person.frontmatter.slug}`}>
           <GatsbyImage image={getImage(person.frontmatter.image)}/>
           <div className={teamStyle.nameAndTitle} style={{textAlign:"left"}}>
-            <h2>{person.frontmatter.name}</h2>
+            <h2 className="heading-font">{person.frontmatter.name}</h2>
             <h3>{person.frontmatter.position}</h3>
           </div>
         </div>

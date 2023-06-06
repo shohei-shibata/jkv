@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'Blinker';
+  src: url(/fonts/Blinker-Regular.ttf) format(truetype);
+}
+
 :root {
   --yellow: #DCAB4E;
   --font-color-light: #fff;
@@ -48,6 +53,10 @@ figcaption {
   line-height: 1.5em;
   font-style: italic;
   color: var(--font-color-gray);
+}
+.heading-font {
+  font-family: Blinker;
+  font-size: calc(24px + 0.7vw);
 }
 .btn {
   background-color: var(--background-color-light);

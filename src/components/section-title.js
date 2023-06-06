@@ -2,7 +2,9 @@ import React from "react"
 
 const SectionTitle = ({children}) => (
   <>
-    <h1 style={{
+    <h1 
+      className="heading-font"
+      style={{
       textAlign: "center",
       textTransform: "uppercase"
     }}>
