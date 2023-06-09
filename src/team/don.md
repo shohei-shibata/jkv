@@ -1,6 +1,6 @@
 ---
 name: "Don Bierman"
-position: "Position Title"
+position: "Chief Chicken Officer"
 image: "../images/portrait_placeholder.png"
 imageAltText: "Portrait Placeholder Image"
 slug: "don"
