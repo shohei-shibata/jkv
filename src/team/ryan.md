@@ -1,7 +1,7 @@
 ---
 name: "Ryan Kabbe"
 position: "Senior Project Engineer"
-image: "../images/portrait_placeholder.png"
+image: "../images/portrait_placeholder.jpg"
 imageAltText: "Portrait Placeholder Image"
 slug: "ryan"
 order: 3

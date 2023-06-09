@@ -13,7 +13,7 @@ export const useTeamData = () => {
             image {
               childImageSharp {
                 id
-                gatsbyImageData(width: 370)
+                gatsbyImageData(width: 550)
               }
             }
             imageAltText
