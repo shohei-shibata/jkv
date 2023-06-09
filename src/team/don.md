@@ -14,7 +14,7 @@ funFacts: [
   {
     q: "If I weren't so damn good at my job, I'd probably be...",
     a: "A food truck operator"
-  }
+  },
   {
     q: "Favorite travel destination that you've been to, or you want to go?",
     a: "New Zealand is on my bucket list"
