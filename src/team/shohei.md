@@ -22,6 +22,6 @@ funFacts: [
 ]
 ---
 
-Shohei Shibata graduated with a B.S. in Mechanical Engineering from Purdue University in 2006. Since then, he has spent much of his career in the automotive industry, designing and developing safety critical chassis and suspension components for major OEMs. The experience has trained him well in the technical know-how of structural design, but he is always curious and learning new things. But in anything he does, he believes that listening, observing, and seeing the big picture is more important than any technical engineering knowledge.
+Shohei Shibata graduated with a B.S. in Mechanical Engineering from Purdue University in 2006. Since then, he has spent much of his career in the automotive industry, designing and developing safety critical chassis and suspension components for major OEMs. The experience has trained him well in the technical know-how of structural design, while at the same time he is a curious learner that is always learning something new. But at the end of the day, he believes that good communication and projection management are almost always more important to a project's success than any technical knowledge.
 
-If he isn't working on a JKV project, you will probably find him working in the garden, or playing jazz drums. 
+If he isn't working on a JKV project, you will probably find him working in the garden, or playing jazz drums. He is also the builder and the maintainer of this website.
