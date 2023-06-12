@@ -1,5 +1,5 @@
 ---
-name: "Ryan Kabbesssssssssssssssssssssss"
+name: "Ryan Kabbes"
 position: "Senior Project Engineer"
 image: "../images/portrait_ryan.jpg"
 imageAltText: "Ryan Kabbes"
