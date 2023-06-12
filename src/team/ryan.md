@@ -1,8 +1,8 @@
 ---
-name: "Ryan Kabbe"
+name: "Ryan Kabbesssssssssssssssssssssss"
 position: "Senior Project Engineer"
 image: "../images/portrait_ryan.jpg"
-imageAltText: "Ryan Kabbe"
+imageAltText: "Ryan Kabbes"
 slug: "ryan"
 order: 3
 category: "Team"
