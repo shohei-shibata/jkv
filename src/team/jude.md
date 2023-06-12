@@ -1,8 +1,8 @@
 ---
 name: "Jude Hueber"
 position: "Principal Engineer and Owner"
-image: "../images/portrait_jude_hueber.jpg"
-imageAltText: "Jude Portrait"
+image: "../images/portrait_jude.jpg"
+imageAltText: "Jude Hueber"
 slug: "jude"
 order: 1
 category: "Team"

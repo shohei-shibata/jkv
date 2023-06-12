@@ -1,8 +1,8 @@
 ---
 name: "Don Bierman"
 position: "Chief Chicken Officer"
-image: "../images/portrait_placeholder.jpg"
-imageAltText: "Portrait Placeholder Image"
+image: "../images/portrait_don.jpg"
+imageAltText: "Don Bierman"
 slug: "don"
 order: 5
 category: "Team"

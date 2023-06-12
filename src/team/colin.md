@@ -2,7 +2,7 @@
 name: "Colin Deming"
 position: "Senior Project Engineer"
 image: "../images/portrait_colin.jpg"
-imageAltText: "Portrait Placeholder Image"
+imageAltText: "Colin Deming"
 slug: "colin"
 order: 4
 category: "Team"

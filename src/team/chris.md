@@ -1,8 +1,8 @@
 ---
 name: "Chris Pennekamp"
 position: "Program Manager and Systems Engineer"
-image: "../images/portrait_chris_pennekamp.jpg"
-imageAltText: "Chris Portrait"
+image: "../images/portrait_chris.jpg"
+imageAltText: "Chris Pennekamp"
 slug: "chris"
 order: 2
 category: "Team"

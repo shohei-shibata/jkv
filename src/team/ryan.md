@@ -1,8 +1,8 @@
 ---
 name: "Ryan Kabbe"
 position: "Senior Project Engineer"
-image: "../images/portrait_placeholder.jpg"
-imageAltText: "Portrait Placeholder Image"
+image: "../images/portrait_ryan.jpg"
+imageAltText: "Ryan Kabbe"
 slug: "ryan"
 order: 3
 category: "Team"
