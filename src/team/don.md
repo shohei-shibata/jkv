@@ -1,6 +1,6 @@
 ---
 name: "Don Bierman"
-position: "Chief Chicken Officer"
+position: "Manufacturing Engineer"
 image: "../images/portrait_don.jpg"
 imageAltText: "Don Bierman"
 slug: "don"
