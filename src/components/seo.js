@@ -21,8 +21,6 @@ const Seo = ({ title, description, pathname, children }) => {
       <meta name="twitter:description" content={seo.description} />
       <meta name="twitter:image" content={seo.image} />
       <meta name="twitter:creator" content={seo.twitterUsername} />
-      {/*Remove below when taking site live!!!*/}
-      <meta name="robots" content="noindex"></meta>
       {children}
     </>
   )
