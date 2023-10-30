@@ -60,12 +60,14 @@ const Nav = () => {
         </Link>
         <ul className={desktopNav}>
           {navItems.desktop.map(item => <li><Link to={item.url}>{item.name}</Link></li>)}
+          <li><a href="https://shop.jkvengineering.com">JKV Shop</a></li>
         </ul>
         <div className={ mobileNavOpen ? `${mobileNav} ${open}` : `${mobileNav} ${closed}`}>
           { mobileNavOpen ? 
             <>
               <ul>
                 {navItems.mobile.map(item => <li><Link to={item.url} onClick={toggleNav}>{item.name}</Link></li>)}
+                <li><a href="https://shop.jkvengineering.com" onClick={toggleNav}>JKV Shop</a></li>
               </ul>
             </>
             : null
