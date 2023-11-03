@@ -23,6 +23,10 @@ const links = [
     name: "Contact Us",
     url: "/contact"
   },
+  {
+    name: "JKV Shop",
+    url: "https://shop.jkvengineering.com"
+  },
 ]
 
 const Footer = () => {
@@ -33,6 +37,9 @@ const Footer = () => {
           {links.map(link => (
             <li key={link.url}><Link to={link.url}>{link.name}</Link></li>
           ))}
+        </ul>
+        <ul>
+          Check us out on: <a href="https://www.facebook.com/JKVEngineering">Facebook</a>
         </ul>
       </div>
       <div className={credits}>© JKV Engineering 2023</div>

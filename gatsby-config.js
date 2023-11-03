@@ -1,6 +1,9 @@
 /**
  * @type {import('gatsby').GatsbyConfig}
  */
+
+require("dotenv").config()
+
 module.exports = {
   siteMetadata: {
     title: `JKV ENGINEERING`,
@@ -10,7 +13,6 @@ module.exports = {
     siteUrl: `https://jkvengineering.com`,
   },
   plugins: [
-    /*"gatsby-plugin-google-gtag", */
     "gatsby-plugin-image", 
     "gatsby-plugin-sitemap", 
     {
@@ -87,6 +89,21 @@ module.exports = {
         "ignore": [`**/_*`]
       },
       __key: "team"
+    }, {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        trackingIds: [ process.env.GTAG_ID ],
+        pluginConfig: {
+          // Puts tracking script in the head instead of the body
+          head: true,
+          // Setting this parameter is also optional
+          respectDNT: true,
+          // Avoids sending pageview hits from custom paths
+          exclude: [],
+          // Delays processing pageview events on route update (in milliseconds)
+          delayOnRouteUpdate: 0,
+        },
+      },
     },
   ]
 };

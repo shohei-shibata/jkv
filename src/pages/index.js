@@ -25,11 +25,12 @@ const IndexPage = () => {
       </SectionDark>
       <SectionYellow sectionId="section-cta-contact">
         <div className="content-wrapper-default-width">
-          <h1 className="cta-text">Talk to us about your next project</h1>
+          <h1 className="cta-text">JKV Shop is now available</h1>
+          <p className="cta-text">Discount rates on Dakota Lithium batteries, and more coming soon.</p>
           <div className="center-content btn-wrapper">
-            <Link to="/contact" className="btn centered">
-              Contact Us
-            </Link>
+            <a href="https://shop.jkvengineering.com" className="btn centered">
+              Go To JKV Shop
+            </a>
           </div>
         </div>
       </SectionYellow>
