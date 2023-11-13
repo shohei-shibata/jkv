@@ -1,7 +1,9 @@
-const React = require("react")
-const Layout = require("./src/components/layout").default
-require("./src/styles/global.css")
+import * as React from "react"
+import Layout from "./src/components/layout"
+import "./src/styles/reset.css"
+import "./src/styles/variables.css"
+import "./src/styles/global.css"
 
-exports.wrapPageElement = ({ element, props }) => {
+export const wrapRootElement = ({ element, props }) => {
   return <Layout {...props}>{element}</Layout>
 }
