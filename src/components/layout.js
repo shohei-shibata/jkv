@@ -18,7 +18,6 @@ export default Layout
 
 export const Head = () => (
   <>
-    <meta name="robots" content="noindex"></meta>
     <title>JKV ENGINEERING</title>
   </>
 )
