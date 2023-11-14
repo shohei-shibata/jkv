@@ -38,7 +38,7 @@
 .mobile-nav-open {
   transform: translateY(0);
 }
-@media (min-width: 640px) {
+@media (min-width: 840px) {
   .mobile-nav-container {
     display: none;
   }

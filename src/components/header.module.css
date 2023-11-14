@@ -8,7 +8,7 @@
 }
 
 .header {
-  display: grid;
+  display: flex;
   width: 100%;
   /*padding: var(--size-gap) var(--size-gutter);*/
   padding: 10px 5vw;
@@ -75,8 +75,9 @@
   grid-area: btnPrimary;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 840px) {
   .header {
+    display: grid;
     grid-template-areas: "logo navHeader btnSecondary btnPrimary";
   }
   .nav {

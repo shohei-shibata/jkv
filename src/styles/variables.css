@@ -66,6 +66,9 @@
 
   /* shadows */
   --shadow: 0 7px 29px 0 hsla(240, 5%, 31%, 0.2);
+  --text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+                 0px 8px 13px rgba(0,0,0,0.1),
+                 0px 18px 23px rgba(0,0,0,0.1);
 
   /* text */
   /* color */
@@ -100,6 +103,7 @@
 
   /* Mobile Nav */
   --mobile-nav-height: 50vh;
+  --mobile-nav-threshold-width: 840px;
 }
 
 /* role-based token adjustments per breakpoint */
