@@ -9,23 +9,24 @@ import Seo from "../components/seo"
 import { useTeamData } from "../hooks/use-team-data"
 import ProjectsList from "../components/projects-list"
 import GoogleMap from "../components/google-map"
+import { Section } from "../components/section"
 
 const IndexPage = () => {
   const team = useTeamData()
   return (
     <>
-      <Slogan/>
-      <SectionRegular sectionId="about">
-        <SectionTitle>What We Do</SectionTitle>
+      <Section dark>
+        <Slogan />
+      </Section>
+      <Section id="about" title="What We Do">
         <ServicesList/>
-      </SectionRegular>
-      <SectionDark sectionId="projects">
-        <SectionTitle>Recent Projects</SectionTitle>
+      </Section>
+      <Section id="projects" title="Recent Projects" dark>
         <ProjectsList/>
-      </SectionDark>
-      <SectionYellow sectionId="section-cta-contact">
+      </Section>
+      <Section id="section-cta-contact" yellow>
         <div className="content-wrapper-default-width">
-          <h1 className="cta-text">JKV Shop is now available</h1>
+          <h1 className="cta-text">JKV Shop is Now Open!</h1>
           <p className="cta-text">Discount rates on Dakota Lithium batteries, and more coming soon.</p>
           <div className="center-content btn-wrapper">
             <a href="https://shop.jkvengineering.com" className="btn centered">
@@ -33,20 +34,18 @@ const IndexPage = () => {
             </a>
           </div>
         </div>
-      </SectionYellow>
-      <SectionRegular sectionId="our-team">
+      </Section>
+      <Section id="our-team" title="Our Team">
         <div className="content-wrapper-default-width">
-          <SectionTitle>Our Team</SectionTitle>
           <div className="team-portraits-wrapper">
             {team.map((person, index) => (
               <Portrait key={`portrait-${index+1}`} data={person.frontmatter}/>
             ))}
           </div>
         </div>
-      </SectionRegular>
-      <SectionDark sectionId="contact-us">
+      </Section>
+      <Section id="contact-us" title="How to Reach Us" dark>
         <div className="content-wrapper-default-width">
-          <SectionTitle>How to Reach Us</SectionTitle>
           <div className="contact-row-1-container">
             <div className="contact-address">
               <h3>JKV ENGINEERING</h3>
@@ -58,7 +57,7 @@ const IndexPage = () => {
             <GoogleMap/>
           </div>
         </div>
-      </SectionDark>
+      </Section>
     </>
   )
 }

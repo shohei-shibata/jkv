@@ -51,4 +51,5 @@ We think this energy storage/distribution industry has so much potential in the 
 * [Steelhead Composites](https://steelheadcomposites.com/)
 
 <br/>
+
 Did this article inspire a project idea of your own? We would love to work on it together. Please [contact us](/contact)!
