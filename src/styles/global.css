@@ -166,3 +166,6 @@ a.btn-yellow {
   gap: 25px;
   justify-content: center;
 }
+.gatsby-resp-image-figure {
+  margin: var(--space-3xl) auto;
+}
