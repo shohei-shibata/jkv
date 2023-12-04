@@ -9,7 +9,7 @@ module.exports = {
     title: `JKV ENGINEERING`,
     description: `Engineering contractor in Milford Ohio, specializing in systems engineering design and rapid prototype solutions.`,
     twitterUsername: `@JkvEngineering`,
-    defaultImage: `/logo.png`,
+    defaultImage: `/logo-seo.jpg`,
     siteUrl: `https://jkvengineering.com`,
   },
   plugins: [
