@@ -28,11 +28,11 @@ main {
   }
 }
 h1 {
-  font-size: calc(20px + .7vw);
+  font-size: calc(16px + .7vw);
   font-weight: var(--bold);
 }
 h2 {
-  font-size: calc(18px + .7vw);
+  font-size: calc(14px + .7vw);
   font-weight: var(--semibold);
 }
 h3 {
