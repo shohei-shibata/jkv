@@ -12,7 +12,7 @@ const Seo = ({ title, description, image, pathname, children }) => {
   }
   return (
     <>
-      <title>Meta Tags — Preview, Edit and Generate</title>
+      <title>{seo.title}</title>
       <meta name="title" content={seo.title} />
       <meta name="description" content={seo.description} />
 
