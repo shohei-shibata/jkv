@@ -12,19 +12,28 @@ const Seo = ({ title, description, image, pathname, children }) => {
   }
   return (
     <>
-      <title>{seo.title}</title>
+
+      <!-- Primary Meta Tags -->
+      <title>Meta Tags — Preview, Edit and Generate</title>
+      <meta name="title" content={seo.title} />
       <meta name="description" content={seo.description} />
-      <meta name="image" content={seo.image} />
-      <meta name="og:title" content={seo.title} />
-      <meta name="og:description" content={seo.description} />
-      <meta name="og:image" content={seo.image} />
-      <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:title" content={seo.title} />
-      <meta name="twitter:url" content={seo.url} />
-      <meta name="twitter:description" content={seo.description} />
-      <meta name="twitter:image" content={seo.image} />
-      <meta name="twitter:creator" content={seo.twitterUsername} />
+
+      <!-- Open Graph / Facebook -->
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content={seo.url} />
+      <meta property="og:title" content={seo.title} />
+      <meta property="og:description" content={seo.description} />
+      <meta property="og:image" content={seo.image} />
+
+      <!-- Twitter -->
+      <meta property="twitter:card" content="summary_large_image" />
+      <meta property="twitter:url" content={seo.url} />
+      <meta property="twitter:title" content={seo.title} />
+      <meta property="twitter:description" content={seo.description} />
+      <meta property="twitter:image" content={seo.image} />
+
       {children}
+      
     </>
   )
 }
