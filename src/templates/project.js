@@ -1,11 +1,20 @@
 import React from "react"
 import { Section } from "../components/section"
-import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import { GatsbyImage, getImage, getSrc } from "gatsby-plugin-image"
 import * as projectStyle from "./project.module.css"
 import { Link } from "gatsby"
 import Seo from "../components/seo"
 
-export const Head = ({pageContext}) => <Seo title={pageContext.title}/>
+export const Head = ({pageContext}) => {
+  const { image } = pageContext
+  const imageSrc = getSrc(image)
+  return (
+    <Seo 
+      title={pageContext.title} 
+      image={imageSrc}
+    />
+  )
+}
 
 const ProjectPageTemplate = ({pageContext}) => {
   const { title, content, image, imageAltText } = pageContext

@@ -9,7 +9,7 @@ module.exports = {
     title: `JKV ENGINEERING`,
     description: `Engineering contractor in Milford Ohio, specializing in systems engineering design and rapid prototype solutions.`,
     twitterUsername: `@JkvEngineering`,
-    image: `/images/logo.png`,
+    defaultImage: `/logo.png`,
     siteUrl: `https://jkvengineering.com`,
   },
   plugins: [
@@ -90,6 +90,15 @@ module.exports = {
       },
       __key: "team"
     }, {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        "name": "images",
+        "path": "./src/images/",
+        "ignore": [`**/_*`]
+      },
+      __key: "images"
+    },
+    {
       resolve: `gatsby-plugin-google-gtag`,
       options: {
         trackingIds: [ process.env.GTAG_ID ],
