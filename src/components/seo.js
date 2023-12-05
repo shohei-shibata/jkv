@@ -10,6 +10,10 @@ const Seo = ({ title, description, image, pathname, children }) => {
     url: `${siteUrl}${pathname || ``}`,
     twitterUsername,
   }
+
+  const isDevelopment = process.env.NODE_ENV !== "production"
+  console.log("Environment", process.env.NODE_ENV)
+
   return (
     <>
       <title>{seo.title}</title>
@@ -27,6 +31,12 @@ const Seo = ({ title, description, image, pathname, children }) => {
       <meta property="twitter:title" content={seo.title} />
       <meta property="twitter:description" content={seo.description} />
       <meta property="twitter:image" content={seo.image} />
+
+      {
+        isDevelopment && 
+        <meta name="robots" content="noindex,nofollow" />
+      }
+      
 
       {children}
 
