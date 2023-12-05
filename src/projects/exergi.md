@@ -1,20 +1,20 @@
 ---
 image: "../images/exergi_featured.jpg"
 imageAltText: "Image of an Electric UTV"
-title: "Electric UTV"
+title: "Hybrid Electric UTV"
 category: "Projects"
 slug: "exergi-utv"
 ---
 
 # Project Idea
 
-Our client, [Exergi Predictive](https://www.exergipredictive.com/), develops AI-based software solutions for energy management of military vehicles. They were looking to showcase their solutions to the United States Department of Defense. 
+Our client, [Exergi Predictive](https://www.exergipredictive.com/), predictive software solutions for energy management of military vehicles.  They were looking to showcase their solutions to the United States Department of Defense and needed help with prototyping a solution.
 
 They approached us to help build the vehicle platform, which would be used to demonstrate their software to the DoD.
 
 # Concept
 
-Based on what we learned through benchmarking, we selected a Light Off-Highway Vehicle (Bobcat 2200) as the base vehicle. The vehicle was to be primarily driven by a 15kW Electric Motor. The diesel engine which came originally with the Bobcat would be utilized as an on-board generator to recharge the battery.
+Based on what we learned through benchmarking, we selected a Light Off-Highway Vehicle (Bobcat 2200) as the base vehicle. The vehicle was to be primarily driven by a 15kW Electric Motor. The diesel engine, which came originally with the Bobcat, would be utilized as an on-board generator to recharge the battery and provide extended range.
 
 ![Bobcat 2200](../images/exergi_1.png)
 
@@ -37,7 +37,6 @@ Some of the key tasks in the build include:
 * Added sensors throughout the vehicle to gather requested data for the client. (wheel speed, manifold pressure, intake air temperature, etc.)
 
 * Dash display and driver interface.
-
 
 ![Bespoke electric drive system by JKV](../images/exergi_3.png)
 
