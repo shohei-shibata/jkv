@@ -11,8 +11,8 @@ const Seo = ({ title, description, image, pathname, children }) => {
     twitterUsername,
   }
 
-  const isDevelopment = process.env.NODE_ENV !== "production"
-  console.log("Environment", process.env.NODE_ENV)
+  const isDevelopment = process.env.GATSBY_DEPLOY_CONTEXT !== "PRODUCTION"
+  console.log("Environment", process.env.GATSBY_DEPLOY_CONTEXT)
 
   return (
     <>
