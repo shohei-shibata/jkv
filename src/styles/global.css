@@ -28,11 +28,11 @@ main {
   }
 }
 h1 {
-  font-size: calc(20px + .7vw);
+  font-size: calc(16px + .7vw);
   font-weight: var(--bold);
 }
 h2 {
-  font-size: calc(18px + .7vw);
+  font-size: calc(14px + .7vw);
   font-weight: var(--semibold);
 }
 h3 {
@@ -165,4 +165,7 @@ a.btn-yellow {
   flex-wrap: wrap;
   gap: 25px;
   justify-content: center;
+}
+.gatsby-resp-image-figure {
+  margin: var(--space-3xl) auto;
 }
