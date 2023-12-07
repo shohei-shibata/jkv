@@ -11,7 +11,7 @@ const AboutSection = () => {
     <div className="content-wrapper-default-width">
       <div className={servicesStyle.galleryWrapper}>
         {services.map((item, index) => (
-          <Link to="/about" key={`about-item-${index+1}`}>
+          <Link to={item.frontmatter.url} key={`about-item-${index+1}`}>
             <ImageOverlay
               image={item.frontmatter.image}
               altText={item.frontmatter.imageAltText}

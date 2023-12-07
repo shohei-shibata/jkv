@@ -66,30 +66,6 @@ module.exports = {
       },
       __key: "pages"
     }, {
-    resolve: 'gatsby-source-filesystem',
-    options: {
-      "name": "services",
-      "path": "./src/services/",
-      "ignore": [`**/_*`]
-    },
-    __key: "services"
-    }, {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        "name": "projects",
-        "path": "./src/projects/",
-        "ignore": [`**/_*`]
-      },
-      __key: "projects"
-    }, {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        "name": "team",
-        "path": "./src/team/",
-        "ignore": [`**/_*`]
-      },
-      __key: "team"
-    }, {
       resolve: 'gatsby-source-filesystem',
       options: {
         "name": "images",
@@ -97,6 +73,14 @@ module.exports = {
         "ignore": [`**/_*`]
       },
       __key: "images"
+    }, {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        "name": "content",
+        "path": "./src/content/",
+        "ignore": [`**/_*`]
+      },
+      __key: "content"
     },
     {
       resolve: `gatsby-plugin-google-gtag`,

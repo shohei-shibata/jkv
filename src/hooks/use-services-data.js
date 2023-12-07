@@ -17,6 +17,7 @@ export const useServicesData = () => {
             }
             imageAltText
             title
+            url
           }
         }
       }
