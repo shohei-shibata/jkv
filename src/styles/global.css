@@ -169,3 +169,15 @@ a.btn-yellow {
 .gatsby-resp-image-figure {
   margin: var(--space-3xl) auto;
 }
+.youtube-embed-container {
+  display: flex;
+  flex-direction: column;
+}
+.youtube-embed-container .caption {
+  text-align: center;
+  margin: auto;
+  text-align: center;
+  line-height: 1.5em;
+  font-style: italic;
+  color: var(--font-color-gray);
+}
