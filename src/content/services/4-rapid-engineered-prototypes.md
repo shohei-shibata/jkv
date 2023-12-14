@@ -3,7 +3,7 @@ image: "../../images/services-2.jpg"
 imageAltText: "Car Engine"
 title: "Rapid, Engineered, Prototypes"
 category: "Services"
-order: 2
+order: 4
 url: "/about/#rapid-engineered-prototypes"
 ---
 

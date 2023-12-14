@@ -3,7 +3,7 @@ image: "../../images/fabrication/welding.jpg"
 imageAltText: "Solar Panel"
 title: "Fabrication Services"
 category: "Services"
-order: 4
+order: 5
 url: "/about/fabrication"
 ---
 

@@ -16,6 +16,7 @@ const AboutSection = () => {
               image={item.frontmatter.image}
               altText={item.frontmatter.imageAltText}
               text={item.frontmatter.title}
+              small
             />
           </Link>
         ))}

@@ -140,6 +140,9 @@ a.btn-yellow {
 }
 .page-content-wrapper {
   padding: 0 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .cta-text {
   text-align: center;

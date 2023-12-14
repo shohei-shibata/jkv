@@ -5,6 +5,7 @@
   padding: 3em;
   margin: auto;
   max-width: var(--default-content-width);
+  overflow-x: visible;
 }
 
 .dark-section {
@@ -37,4 +38,9 @@
 
 .full-width-section>.section-content-wrapper {
   max-width: none;
+}
+
+.full-width-section {
+  width: 100vw;
+  align-self: center;
 }

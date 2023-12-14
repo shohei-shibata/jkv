@@ -104,6 +104,11 @@
   /* Mobile Nav */
   --mobile-nav-height: 50vh;
   --mobile-nav-threshold-width: 840px;
+
+  /* Images */
+  --image-width-sm: 240px;
+  --image-width-md: 370px;
+  --image-width-lg: 500px;
 }
 
 /* role-based token adjustments per breakpoint */
