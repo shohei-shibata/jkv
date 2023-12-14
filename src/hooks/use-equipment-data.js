@@ -26,7 +26,5 @@ export const useEquipmentData = () => {
     }
   `)
 
-  console.log("Equipment Data", data.allMarkdownRemark.nodes)
-
   return data.allMarkdownRemark.nodes
 }

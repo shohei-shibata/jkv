@@ -34,7 +34,6 @@ const EquipmentPattern = ({equipment, index}) => {
 
 const EquipmentList = () => {
   const equipmentList = useEquipmentData()
-  console.log("Equipment", equipmentList)
   return (
     <>
       <div className="content-wrapper-default-width">

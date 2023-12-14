@@ -12,7 +12,6 @@ const Seo = ({ title, description, image, pathname, children }) => {
   }
 
   const isDevelopment = process.env.GATSBY_DEPLOY_CONTEXT !== "PRODUCTION"
-  console.log("Environment", process.env.GATSBY_DEPLOY_CONTEXT)
 
   return (
     <>

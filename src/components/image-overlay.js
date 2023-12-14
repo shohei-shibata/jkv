@@ -8,7 +8,6 @@ const ImageOverlay = ({image, altText, text, small, large}) => {
     ${small ? imageOverlayCss.imageWrapperSmall : ""} 
     ${large ? imageOverlayCss.imageWrapperLarge : ""}
   `
-  console.log(wrapperClassName)
   return (
     <div className={wrapperClassName}>
       <GatsbyImage 
