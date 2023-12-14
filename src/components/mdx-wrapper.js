@@ -1,5 +1,4 @@
 import React from "react"
-import SectionTitle from "../components/section-title"
 import { Section } from "./section"
 
 const MdxWrapper = ({children, title}) => {

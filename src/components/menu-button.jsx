@@ -1,7 +1,6 @@
 import * as React from "react"
-import { Link } from "gatsby"
 import MenuIcon from "../icons/menu"
-import { menuButton, badge } from "./menu-button.module.css"
+import { menuButton } from "./menu-button.module.css"
 import CrossIcon from "../icons/cross"
 
 export function MenuButton({ onMenuToggle, open }) {
