@@ -184,3 +184,7 @@ a.btn-yellow {
   font-style: italic;
   color: var(--font-color-gray);
 }
+.annoucements-list-container {
+  display: flex;
+  justify-content: center;
+}

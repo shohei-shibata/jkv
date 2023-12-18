@@ -1,26 +1,38 @@
 import * as React from "react"
 import { Link } from "gatsby"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import Slogan from "../components/slogan"
 import ServicesList from "../components/services-list"
+import ProjectsList from "../components/projects-list"
 import Portrait from "../components/portrait"
 import Seo from "../components/seo"
 import { useTeamData } from "../hooks/use-team-data"
-import ProjectsList from "../components/projects-list"
+import { useAnnouncementsData } from "../hooks/use-announcements-data"
 import GoogleMap from "../components/google-map"
 import { Section } from "../components/section"
+import AnnouncementItem from "../components/announcement-item"
 
 const IndexPage = () => {
   const team = useTeamData()
+  const announcements = useAnnouncementsData()
   return (
     <>
       <Section dark>
         <Slogan />
       </Section>
-      <Section id="about" title="What We Do">
-        <ServicesList/>
+      <Section id="latest" title="Latest">
+        <div className="annoucements-list-container">
+          {
+            announcements.map(item => {
+              return (
+                <AnnouncementItem item={item}/>
+              )
+            })
+          }
+        </div>
       </Section>
-      <Section id="projects" title="Recent Projects" dark>
-        <ProjectsList/>
+      <Section id="about" title="What We Do" dark>
+        <ServicesList/>
       </Section>
       <Section id="section-cta-contact" yellow>
         <div className="content-wrapper-default-width">
@@ -32,6 +44,9 @@ const IndexPage = () => {
             </a>
           </div>
         </div>
+      </Section>
+      <Section id="items" title="Recent Projects" dark>
+        <ProjectsList/>
       </Section>
       <Section id="our-team" title="Our Team">
         <div className="content-wrapper-default-width">

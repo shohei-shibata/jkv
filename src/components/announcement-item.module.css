@@ -1,0 +1,33 @@
+.container {
+  background-color: var(--background-color-light);
+  border: none;
+  border-radius: 10px;
+  padding: var(--space-lg) var(--space-2xl);
+  display: block;
+  box-shadow: var(--shadow);
+  transition: opacity .1s;
+  display: flex;
+  flex-direction: column;
+  transition: height 1s;
+}
+
+.btn-small {
+  text-transform: none;
+  padding: var(--space-sm) var(--space-md);
+  font-weight: var(--body);
+  box-shadow: none;
+  border: 1px solid var(--grey-20);
+  color: var(--grey-50);
+  font-size: 1em;
+  margin: var(--space-lg) 0px;
+  align-self: flex-end;
+}
+
+.btn-small:hover {
+  color: var(--grey-80);
+  border-color: ver(--grey-50);
+}
+
+.hidden {
+  display: none;
+}
