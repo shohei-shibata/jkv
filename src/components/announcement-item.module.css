@@ -6,9 +6,17 @@
   display: block;
   box-shadow: var(--shadow);
   transition: opacity .1s;
+  color: var(--font-color-dark);
+}
+
+.heading-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-text-wrapper {
   display: flex;
   flex-direction: column;
-  transition: height 1s;
 }
 
 .btn-small {
@@ -26,6 +34,10 @@
 .btn-small:hover {
   color: var(--grey-80);
   border-color: ver(--grey-50);
+}
+
+.meta-data {
+  float: right;
 }
 
 .hidden {

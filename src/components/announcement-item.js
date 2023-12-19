@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import { container, btnSmall, hidden } from "./announcement-item.module.css"
+import { container, headingWrapper, mainTextWrapper, btnSmall, hidden } from "./announcement-item.module.css"
 
 const formatDate = (dateString) => {
   return Intl.DateTimeFormat('en-US', {
@@ -19,19 +19,23 @@ const AnnouncementItem = ({item}) => {
   }
   return (
     <div className={container}>
-      <h1>{item.frontmatter.title}</h1>
-      <p>{formattedDate}</p>
-      <div className={ showFullText && hidden } dangerouslySetInnerHTML={{__html: item.excerpt}}/>
-      <div className={ !showFullText && hidden } dangerouslySetInnerHTML={{__html: item.html}}/>
-      <button 
-        className={`btn ${btnSmall} ${!hasExcerpt && hidden}`}
-        onClick={toggleFullText}
-      >
-        {
-          showFullText ?
-          "Read Less" : "Read More"
-        }
-      </button>
+      <div className={headingWrapper}>
+        <h1>{item.frontmatter.title}</h1>
+        <p>{formattedDate}</p>
+      </div>
+      <div className={mainTextWrapper}>
+        <div className={ showFullText && hidden } dangerouslySetInnerHTML={{__html: item.excerpt}}/>
+        <div className={ !showFullText && hidden } dangerouslySetInnerHTML={{__html: item.html}}/>
+        <button 
+          className={`btn ${btnSmall} ${!hasExcerpt && hidden}`}
+          onClick={toggleFullText}
+        >
+          {
+            showFullText ?
+            "Show Less" : "Read More"
+          }
+        </button>
+      </div>
     </div>
   )
 }

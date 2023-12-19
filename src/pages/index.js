@@ -20,7 +20,10 @@ const IndexPage = () => {
       <Section dark>
         <Slogan />
       </Section>
-      <Section id="latest" title="Latest">
+      <Section id="about" title="What We Do">
+        <ServicesList/>
+      </Section>
+      <Section id="latest" title="Latest" dark>
         <div className="annoucements-list-container">
           {
             announcements.map(item => {
@@ -30,9 +33,6 @@ const IndexPage = () => {
             })
           }
         </div>
-      </Section>
-      <Section id="about" title="What We Do" dark>
-        <ServicesList/>
       </Section>
       <Section id="section-cta-contact" yellow>
         <div className="content-wrapper-default-width">
