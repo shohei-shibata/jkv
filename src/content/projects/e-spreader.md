@@ -37,7 +37,7 @@ This completed Zero-Turn Machine is easy to use and lasts all day (8 Hours of co
 
 ![A photo of the Electric Spreader with a driver](../../images/e-spreader_5.jpg)
 
-The Electric Spreader is powered by a couple of Dakota Lithium batteries (available for puchase at the [JKV Shop](https://shop.jkvengineering.com)), for a total of 48 Volt and 192 Ah, or 9.2 Kw.
+The Electric Spreader is powered by a couple of Dakota Lithium batteries (available for puchase at the [JKV Shop](https://shop.jkvengineering.com)), for a total of 48 Volt and 192 Ah, or 9.2 kW.
 
 ![Dakota Lithium Battery powering the Electric Spreader](../../images/e-spreader_2.jpg)
 
@@ -47,13 +47,34 @@ That's one of the greatest advantages of working with JKV - from concept, to the
 
 Watch the Electric Spreader/Sprayer in action below:
 
-<iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FJKVEngineering%2Fvideos%2F1345777123001226%2F&show_text=false&width=560&t=0" width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/xGEIbfydIps?si=OAKPthGFiKYgf86A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 # What's Next?
 
 We are putting in the miles to test its robustness, operability, and to look for opportunities of further refinement. So far, we all agree that this machine is impressive!
 
-We are looking for potential customers of the Electric Spreader. Do you work in the lawn care industry, or do you know of someone who does? If so, please [get in touch](/contact) with us!
+The prototype machine is being tested by interested clients. Are you interested in test driving the spreader? Sign up below to receive updates about future demo events. Feel free to contact us directly as well, to set up a test drive.
+
+<form
+  action="https://buttondown.email/api/emails/embed-subscribe/jkvengineering"
+  method="post"
+  target="_blank"
+  onSubmit="window.open('https://buttondown.email/jkvengineering', 'popupwindow')"
+  class="buttondown-form"
+>
+  <div class="input-field-group">
+    <label for="bd-name">Name</label>
+    <input type="text" name="name" id="bd-name" required />
+  </div>
+  <div class="input-field-group">
+    <label for="bd-email">Email</label>
+    <input type="email" name="email" id="bd-email" required />
+  </div>
+  <input class="btn btn-yellow" type="submit" value="Subscribe" />
+  <small>
+    <a href="https://buttondown.email/refer/jkvengineering" target="_blank">Powered by Buttondown.</a>
+  </small>
+</form>
 
 # Learn More
 

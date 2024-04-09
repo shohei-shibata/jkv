@@ -188,3 +188,30 @@ a.btn-yellow {
   display: flex;
   justify-content: center;
 }
+
+.buttondown-form {
+  margin: var(--space-2xl) auto;
+  padding: var(--space-lg);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+}
+.input-field-group {
+  margin: var(--space-md);
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  align-items: center;
+}
+.input-field-group input {
+  border: solid 1px var(--grey-50);
+  border-radius: var(--radius-sm);
+  line-height: 2em;
+}
+.buttondown-form input[type="submit"] {
+  margin: var(--space-lg);
+}
+.buttondown-form small {
+  text-align: center;
+}
