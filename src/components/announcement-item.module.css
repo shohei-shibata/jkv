@@ -2,7 +2,7 @@
   background-color: var(--background-color-light);
   border: none;
   border-radius: 10px;
-  padding: var(--space-lg) var(--space-2xl);
+  padding: var(--space-lg) var(--space-3xl);
   display: block;
   box-shadow: var(--shadow);
   transition: opacity .1s;

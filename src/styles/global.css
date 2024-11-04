@@ -184,9 +184,11 @@ a.btn-yellow {
   font-style: italic;
   color: var(--font-color-gray);
 }
-.annoucements-list-container {
+.announcements-list-container {
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  gap: var(--space-lg);
 }
 
 .buttondown-form {

@@ -24,7 +24,7 @@ const IndexPage = () => {
         <ServicesList/>
       </Section>
       <Section id="latest" title="Latest" dark>
-        <div className="annoucements-list-container">
+        <div className="announcements-list-container">
           {
             announcements.map(item => {
               return (

@@ -1,8 +1,6 @@
 ---
-image: "../../images/image"
-imageAltText: "Alt Text"
 title: "Announcement Title"
-category: "Annoucements"
+category: "Announcements"
 slug: "announcement-slug"
 ---
 
