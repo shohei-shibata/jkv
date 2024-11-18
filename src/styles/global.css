@@ -177,6 +177,9 @@ a.btn-yellow {
   flex-direction: column;
   margin: var(--space-3xl) auto;
 }
+.youtube-embed-container iframe {
+  max-width: 100%;
+}
 .youtube-embed-container .caption {
   text-align: center;
   margin: auto;
