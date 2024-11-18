@@ -175,6 +175,7 @@ a.btn-yellow {
 .youtube-embed-container {
   display: flex;
   flex-direction: column;
+  margin: var(--space-3xl) auto;
 }
 .youtube-embed-container .caption {
   text-align: center;
