@@ -1,6 +1,5 @@
 import * as React from "react"
 import { Link } from "gatsby"
-import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import Slogan from "../components/slogan"
 import ServicesList from "../components/services-list"
 import ProjectsList from "../components/projects-list"
@@ -20,7 +19,10 @@ const IndexPage = () => {
       <Section dark>
         <Slogan />
       </Section>
-      <Section id="about" title="What We Do">
+      <Section id="about" title="Fabrication Services">
+        <ServicesList/>
+      </Section>
+      <Section id="about" title="Engineering Services">
         <ServicesList/>
       </Section>
       <Section id="latest" title="Latest" dark>

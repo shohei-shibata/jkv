@@ -4,7 +4,7 @@ import ImageOverlay from "./image-overlay"
 import { Link } from "gatsby"
 import { useServicesData } from "../hooks/use-services-data"
 
-const AboutSection = () => {
+const Services = () => {
   const services = useServicesData()
   return (
   <>
@@ -28,4 +28,4 @@ const AboutSection = () => {
   </>
 )}
 
-export default AboutSection
+export default Services
