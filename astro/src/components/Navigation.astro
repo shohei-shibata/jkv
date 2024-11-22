@@ -1,0 +1,80 @@
+---
+import { Icon } from "astro-icon/components";
+---
+
+<nav>
+  <div class="nav-content-wrapper">
+    <div class="logo"><a href="/"><Icon name="logo" /></a></div>
+    <ul class="nav-links-container">
+      <li>
+        <a class="nav-link" href="/about/"> About </a>
+      </li>
+      <li>
+        <a class="nav-link" href="/fabrication/"> Fabrication </a>
+      </li>
+      <li>
+        <a class="nav-link" href="/engineering/"> Engineering </a>
+      </li>
+      <li>
+        <a class="nav-link" href="/contact/"> Contact </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<style>
+  nav {
+    box-shadow: var(--box-shadow-nav);
+  }
+  .nav-content-wrapper {
+    display: flex;
+    align-items: center;
+    font-weight: var(--medium);
+    justify-content: space-between;
+    text-transform: uppercase;
+    padding: var(--space-md) var(--space-xl);
+    max-width: var(--width-wide-content);
+    margin: auto;
+  }
+  .nav-links-container {
+    display: flex;
+    gap: var(--space-md);
+  }
+  .nav-links-container li {
+    list-style-type: none;
+  }
+  .nav-link {
+    cursor: pointer;
+    text-decoration: none;
+    height: var(--size-input);
+    display: flex;
+    color: var(--text-color-secondary);
+    align-items: center;
+    padding-left: var(--space-md);
+    padding-right: var(--space-md);
+  }
+  .nav-link:hover {
+    color: var(--text-color);
+  }
+  .nav-link[aria-active="page"] {
+    color: var(--primary);
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
+  }
+  .nav-link[aria-active="page"]:hover {
+    color: var(--primary);
+  }
+  .logo svg {
+    width: 220px;
+    height: 75px;
+  }
+  @media screen and (max-width: 768px) {
+    .nav-content-wrapper {
+      justify-content: center;
+    }
+    .nav-links-container {
+      display: none;
+    }
+  }
+</style>

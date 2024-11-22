@@ -1,0 +1,16 @@
+---
+import Layout from "../layouts/Layout.astro"
+import Team from "../components/Team.astro"
+import AboutText from "../content/pages/about.md"
+---
+
+<Layout title="About">
+  <h1 id="about-jkv" class="section-title">About JKV</h1>
+  <hr class="section-title-hr">
+  <div class="text-content-container">
+    <AboutText/>
+  </div>
+  <h1 id="our-team" class="section-title">Our Team</h1>
+  <hr class="section-title-hr">
+  <Team/>
+</Layout>

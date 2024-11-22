@@ -1,0 +1,110 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+const services = [
+  {
+    title: "Design",
+    text: "Listen to your needs. Apply our expertise to map out a realistic plan.",
+  },
+  {
+    title: "Build",
+    text: "Everything we do, we do it with quality outcome in mind.",
+  },
+  {
+    title: "Deliver",
+    text: "We are not finished until you are completely satisfied.",
+  },
+]
+---
+
+<Layout title="HOME">
+  <section class="banner radial-gradient-dark">
+    <div class="banner-text-overlay">
+      <h1>
+        Highest quality results<br />No matter how simple or complex the project
+      </h1>
+      <a href="/contact" class="btn btn-transparent-light">Get An Estimate</a>
+    </div>
+  </section>
+  <section class="main-content">
+    <h1 class="center-text">
+      Engineering and fabrication services to fit your needs.
+    </h1>
+    <div class="services">
+      {services.map(item => (
+        <div class="service-item radial-gradient-yellow">
+          <div class="service-item-inner">
+            <h2>{item.title}</h2>
+            <p>{item.text}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+  <section class="main-content">
+    <h1 id="fabrication" class="section-title">Fabrication Services</h1>
+    <hr class="section-title-hr" />
+  </section>
+  <section class="main-content">
+    <h1 id="fabrication" class="section-title">Engineering Projects</h1>
+    <hr class="section-title-hr" />
+  </section>
+</Layout>
+
+<style>
+  .banner {
+    height: 400px;
+    color: var(--font-color-light);
+  }
+  .banner h1 {
+    font-family: var(--font-heading);
+    font-weight: var(--bolder);
+    font-size: var(--text-3xl);
+  }
+  .banner-text-overlay {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: var(--space-3xl);
+  }
+  .banner-text-overlay .btn {
+    max-width: 300px;
+  }
+  .main-content {
+    max-width: var(--width-main-content);
+    margin: var(--space-3xl) auto;
+  }
+  .services {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2xl);
+    justify-content: center;
+    padding: var(--space-xl) 0;
+  }
+  .service-item {
+    width: 250px;
+    height: 300px;
+    border-radius: var(--radius-md);
+    box-shadow: var(--box-shadow);
+  }
+  .service-item h2 {
+    font-size: var(--text-2xl);
+  }
+  .service-item p {
+    font-size: var(--text-xl);
+  }
+  .service-item-inner {
+    color: var(--font-color-dark);
+    width: 246px;
+    height: 296px;
+    margin: 2px auto;
+    padding: var(--space-xl);
+    background-color: var(--background-color-light);
+    border-radius: 5px;
+    transition: background-color 0.125s ease-in
+  }
+  .service-item-inner:hover {
+    background-color: #ffffffcc;
+  }
+</style>
