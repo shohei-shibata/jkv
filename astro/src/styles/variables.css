@@ -127,6 +127,7 @@
   --box-shadow-nav: rgba(99, 99, 110, 0.2) 0px 7px 29px 0px;
   --box-shadow: rgba(99, 99, 110, 0.2) 0px 7px 29px 0px;
 
+  --btn-width-md: 250px;
   --btn-width-wide: 350px;
 
   --linear-gradient-dark: linear-gradient(155deg, var(--grey-90) 0%, var(--grey-50) 100%);

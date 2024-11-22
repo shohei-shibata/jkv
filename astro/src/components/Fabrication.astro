@@ -1,0 +1,84 @@
+---
+import SectionTitle from "./SectionTitle.astro";
+
+const items = [
+  {
+    title: "Cutting",
+    text: "Waterjet cutting of to 5'x8' material",
+  },
+  {
+    title: "Forming",
+    text: "Sheetmetal bending up to 10' length and 1/2\" thickness",
+  },
+  {
+    title: "Welding",
+    text: "Steel, Aluminum, or Stainless Steel",
+  },
+  {
+    title: "Electronics",
+    text: "Integrate lighting, EV Charger, etc.",
+  },
+  {
+    title: "Design Support",
+    text: "Turn your idea into an executable design",
+  },
+  {
+    title: "Assembly",
+    text: "To your spec and ready to install",
+  },
+];
+---
+
+<section class="main-content">
+  <SectionTitle title="Fabrication Services" />
+  <div class="services">
+    <p class="text">
+      
+    </p>
+    <div class="service-item-container">
+      {
+        items.map((item) => (
+          <div class="service-item">
+            <h2>{item.title}</h2>
+            <p>{item.text}</p>
+          </div>
+        ))
+      }
+    </div>
+    <a class="btn btn-yellow" href="/fabrication">Learn More</a>
+  </div>
+</section>
+
+<style>
+  .services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-2xl);
+  }
+  .service-item-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2xl);
+    justify-content: center;
+    padding: var(--space-xl) 0;
+  }
+  .service-item {
+    width: 250px;
+    height: 300px;
+    border-radius: var(--radius-md);
+    box-shadow: var(--box-shadow);
+    padding: var(--space-xl);
+  }
+  .service-item h2 {
+    font-size: var(--text-2xl);
+  }
+  .service-item p {
+    font-size: var(--text-xl);
+  }
+  .text {
+    max-width: var(--width-text-content);
+    margin: auto;
+    font-size: var(--text-xl);
+  }
+</style>

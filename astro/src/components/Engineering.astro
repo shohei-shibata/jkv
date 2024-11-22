@@ -1,0 +1,81 @@
+---
+import SectionTitle from "./SectionTitle.astro";
+
+const items = [
+  {
+    title: "Product Development",
+    text: "Concept Evaluation, Cost Analysis",
+  },
+  {
+    title: "Product Design",
+    text: "CAD Design, CAE Analysis, Electrical Systems, Control Logic",
+  },
+  {
+    title: "Project Management",
+    text: "Milestones, Documentation",
+  },
+  {
+    title: "Testing",
+    text: "To your test specifications, or let us develop a test procedure",
+  },
+  {
+    title: "Prototyping",
+    text: "Rapid prototyping to bring your idea to reality",
+  },
+];
+---
+
+<section class="main-content">
+  <SectionTitle title="Engineering Projects" />
+  <div class="services">
+    <p class="text">
+      Experts in Electrical Drive Systems and Alternative Energy, JKV has
+      designed and built fully-functional systems from the ground up.
+    </p>
+    <div class="service-item-container">
+      {
+        items.map((item) => (
+          <div class="service-item">
+            <h2>{item.title}</h2>
+            <p>{item.text}</p>
+          </div>
+        ))
+      }
+    </div>
+    <a class="btn btn-yellow btn-md" href="/engineering">Learn More</a>
+  </div>
+</section>
+
+<style>
+  .services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-2xl);
+  }
+  .service-item-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2xl);
+    justify-content: center;
+    padding: var(--space-xl) 0;
+  }
+  .service-item {
+    width: 250px;
+    height: 300px;
+    border-radius: var(--radius-md);
+    box-shadow: var(--box-shadow);
+    padding: var(--space-xl);
+  }
+  .service-item h2 {
+    font-size: var(--text-2xl);
+  }
+  .service-item p {
+    font-size: var(--text-xl);
+  }
+  .text {
+    max-width: var(--width-text-content);
+    margin: auto;
+    font-size: var(--text-xl);
+  }
+</style>

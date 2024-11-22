@@ -1,20 +1,9 @@
 ---
 import Layout from "../layouts/Layout.astro";
-
-const services = [
-  {
-    title: "Design",
-    text: "Listen to your needs. Apply our expertise to map out a realistic plan.",
-  },
-  {
-    title: "Build",
-    text: "Everything we do, we do it with quality outcome in mind.",
-  },
-  {
-    title: "Deliver",
-    text: "We are not finished until you are completely satisfied.",
-  },
-]
+import Services from "../components/Services.astro";
+import Fabrication from "../components/Fabrication.astro";
+import Engineering from "../components/Engineering.astro";
+import SectionTitle from "../components/SectionTitle.astro";
 ---
 
 <Layout title="HOME">
@@ -23,32 +12,25 @@ const services = [
       <h1>
         Highest quality results<br />No matter how simple or complex the project
       </h1>
-      <a href="/contact" class="btn btn-transparent-light">Get An Estimate</a>
+      <a href="/contact" class="btn btn-transparent-light">Request a Quote</a>
     </div>
   </section>
-  <section class="main-content">
-    <h1 class="center-text">
-      Engineering and fabrication services to fit your needs.
-    </h1>
-    <div class="services">
-      {services.map(item => (
-        <div class="service-item radial-gradient-yellow">
-          <div class="service-item-inner">
-            <h2>{item.title}</h2>
-            <p>{item.text}</p>
-          </div>
-        </div>
-      ))}
+  <Services />
+  <Fabrication />
+  <Engineering />
+  <div class="cta radial-gradient-dark">
+    <div class="text-content-container cta-message">
+      <p>Adaptability is our strength.</p>
+      <p>
+        No matter large or small, simple or complex, you can count on JKV to
+        deliver a top quality result.
+      </p>
+      <p>
+        Contact us today to discuss your project.
+      </p>
     </div>
-  </section>
-  <section class="main-content">
-    <h1 id="fabrication" class="section-title">Fabrication Services</h1>
-    <hr class="section-title-hr" />
-  </section>
-  <section class="main-content">
-    <h1 id="fabrication" class="section-title">Engineering Projects</h1>
-    <hr class="section-title-hr" />
-  </section>
+    <a href="/contact" class="btn btn-transparent-light btn-cta">Request a Quote</a>
+  </div>
 </Layout>
 
 <style>
@@ -63,6 +45,8 @@ const services = [
   }
   .banner-text-overlay {
     height: 100%;
+    max-width: var(--width-wide-content);
+    margin: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -75,36 +59,22 @@ const services = [
     max-width: var(--width-main-content);
     margin: var(--space-3xl) auto;
   }
-  .services {
-    display: flex;
-    flex-wrap: wrap;
-    gap: var(--space-2xl);
-    justify-content: center;
-    padding: var(--space-xl) 0;
-  }
-  .service-item {
-    width: 250px;
-    height: 300px;
+  .cta {
+    color: var(--font-color-light);
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    max-width: var(--width-main-content);
+    margin: var(--space-3xl) auto;
+    padding: var(--space-3xl);
     border-radius: var(--radius-md);
-    box-shadow: var(--box-shadow);
+    align-items: center;
+    gap: var(--space-3xl);
   }
-  .service-item h2 {
+  .cta-message {
     font-size: var(--text-2xl);
+    font-family: var(--font-heading);
   }
-  .service-item p {
-    font-size: var(--text-xl);
-  }
-  .service-item-inner {
-    color: var(--font-color-dark);
-    width: 246px;
-    height: 296px;
-    margin: 2px auto;
-    padding: var(--space-xl);
-    background-color: var(--background-color-light);
-    border-radius: 5px;
-    transition: background-color 0.125s ease-in
-  }
-  .service-item-inner:hover {
-    background-color: #ffffffcc;
+  .btn-cta {
+    height: fit-content;
   }
 </style>
