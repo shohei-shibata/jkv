@@ -3,6 +3,7 @@ image: "../../images/e-spreader_featured.jpg"
 imageAltText: "Image of the electric spreader"
 title: "Electric Fertilizer Spreader"
 category: "Projects"
+tags: [Engineering]
 slug: "electric-spreader"
 ---
 

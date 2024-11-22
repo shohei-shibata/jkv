@@ -1,8 +1,14 @@
 ---
 import Layout from "../layouts/Layout.astro"
+import Cta from "../components/Cta.astro"
+import SectionTitle from "../components/SectionTitle.astro"
+import EngineeringText from "../content/pages/engineering.md"
 ---
 
 <Layout title="Engineering">
-  <h1 id="engineering" class="section-title">Engineering</h1>
-  <hr class="section-title-hr">
+  <SectionTitle title="Engineering"/>
+  <div class="text-content-container">
+    <EngineeringText />
+  </div>
+  <Cta />
 </Layout>

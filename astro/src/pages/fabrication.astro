@@ -1,8 +1,14 @@
 ---
 import Layout from "../layouts/Layout.astro"
+import FabricationText from "../content/pages/fabrication.md"
+import SectionTitle from "../components/SectionTitle.astro"
+import Cta from "../components/Cta.astro"
 ---
 
 <Layout title="Fabrication">
-  <h1 id="Fabrication" class="section-title">Fabrication</h1>
-  <hr class="section-title-hr">
+  <SectionTitle title="Fabrication"/>
+  <div class="text-content-container">
+    <FabricationText/>
+  </div>
+  <Cta />
 </Layout>

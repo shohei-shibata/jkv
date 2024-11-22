@@ -3,7 +3,7 @@ import Layout from "../layouts/Layout.astro";
 import Services from "../components/Services.astro";
 import Fabrication from "../components/Fabrication.astro";
 import Engineering from "../components/Engineering.astro";
-import SectionTitle from "../components/SectionTitle.astro";
+import Cta from "../components/Cta.astro";
 ---
 
 <Layout title="HOME">
@@ -16,21 +16,9 @@ import SectionTitle from "../components/SectionTitle.astro";
     </div>
   </section>
   <Services />
-  <Fabrication />
+  <Fabrication class="section-light-grey"/>
   <Engineering />
-  <div class="cta radial-gradient-dark">
-    <div class="text-content-container cta-message">
-      <p>Adaptability is our strength.</p>
-      <p>
-        No matter large or small, simple or complex, you can count on JKV to
-        deliver a top quality result.
-      </p>
-      <p>
-        Contact us today to discuss your project.
-      </p>
-    </div>
-    <a href="/contact" class="btn btn-transparent-light btn-cta">Request a Quote</a>
-  </div>
+  <Cta />
 </Layout>
 
 <style>

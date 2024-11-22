@@ -3,6 +3,7 @@ image: "../../images/threewheeler_1.jpg"
 imageAltText: "Electric Three Wheeler"
 title: "Electric Three Wheeler"
 category: "Projects"
+tags: [Engineering]
 slug: "electric-three-wheeler"
 ---
 

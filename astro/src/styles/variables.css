@@ -115,6 +115,7 @@
   --font-color-dark: var(--grey-90);
   --font-color-gray: var(--grey-50);
   --background-color-light: var(--white);
+  --background-color-light-grey: var(--grey-20);
   --background-color-dark: var(--grey-90);
   --background-color-yellow: var(--yellow);
   --background-dark-shadow: rgba(0, 0, 0, 0.1) 0px 0px 125px 100px inset;

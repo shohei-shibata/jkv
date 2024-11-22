@@ -1,10 +1,10 @@
 ---
 image: "../../images/rover_2.png"
 imageAltText: "Lunar Rover Demonstrator Vehicle"
-title: "Lunar Rover"
+title: "Recent Fabrication Projects"
 category: "Projects"
-tags: [Engineering]
-slug: "lunar-rover"
+tags: [Fabrication]
+slug: "recent-fabrication-projects"
 ---
 
 We may be a small company, but we are not afraid to take on some seriously big ideas! 

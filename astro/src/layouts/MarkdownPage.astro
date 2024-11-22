@@ -1,15 +1,17 @@
 ---
+import SectionTitle from "../components/SectionTitle.astro";
 import Layout from "./Layout.astro";
+import Cta from "../components/Cta.astro";
 
-const { title } = Astro.props.frontmatter;
+const { title } = Astro.props;
 ---
 
 <Layout title={title}>
   <div class="markdown-content-wrapper">
-    <h1 class="section-title">{title}</h1>
-    <hr class="section-title-hr">
+    <SectionTitle title={title} />
     <slot/>
   </div>
+  <Cta />
 </Layout>
 
 <style>

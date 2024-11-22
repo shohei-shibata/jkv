@@ -146,6 +146,10 @@ a.btn.btn-transparent-light:hover {
   box-shadow: var(--background-dark-shadow);
   color: var(--font-color-light);
 }
+.section-light-grey { 
+  background-color: var(--background-color-light-grey);
+  color: var(--font-color-dark);
+}
 .section-light { 
   background-color: var(--background-color-light);
   color: var(--font-color-dark);
