@@ -26,4 +26,17 @@ const projects = defineCollection({
   })
 });
 
-export const collections = { team, projects };
+const capabilities = defineCollection({
+  type: 'content',
+  schema: ({ image }) => z.object({
+    name: z.string(),
+    cover: image().refine((img) => img.width >= 200, {
+      message: "Cover image must be at least 200px wide."
+    }),
+    coverAltText: z.string(),
+    category: z.string(),
+    order: z.number()
+  })
+});
+
+export const collections = { team, projects, capabilities };

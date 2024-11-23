@@ -1,47 +1,24 @@
 ---
 import SectionTitle from "./SectionTitle.astro";
+import { getCollection } from "astro:content";
+import type { CollectionEntry } from "astro:content";
+import CardWithImage from "./CardWithImage.astro";
 
-const items = [
-  {
-    title: "Cutting",
-    text: "Waterjet cutting of to 5'x8' material",
-  },
-  {
-    title: "Forming",
-    text: "Sheetmetal bending up to 10' length and 1/2\" thickness",
-  },
-  {
-    title: "Welding",
-    text: "Steel, Aluminum, or Stainless Steel",
-  },
-  {
-    title: "Electronics",
-    text: "Integrate lighting, EV Charger, etc.",
-  },
-  {
-    title: "Design Support",
-    text: "Turn your idea into an executable design",
-  },
-  {
-    title: "Assembly",
-    text: "To your spec and ready to install",
-  },
-];
+const fabricationServices: CollectionEntry<"capabilities">[] =
+  await getCollection("capabilities", ({data}) => data.category === "Fabrication");
+fabricationServices.sort((a, b) => a.data.order - b.data.order);
+
+const props= Astro.props;
 ---
 
-<section class="main-content">
-  <SectionTitle title="Fabrication Services" />
+<section class={["main-content", props.class].join(" ")}>
+  <SectionTitle title="Fabrication Capabilities" />
   <div class="services">
-    <p class="text">
-      
-    </p>
+    <p class="text"></p>
     <div class="service-item-container">
       {
-        items.map((item) => (
-          <div class="service-item">
-            <h2>{item.title}</h2>
-            <p>{item.text}</p>
-          </div>
+        fabricationServices.map((item) => (
+          <CardWithImage item={item} />
         ))
       }
     </div>
@@ -59,22 +36,10 @@ const items = [
   .service-item-container {
     display: flex;
     flex-wrap: wrap;
+    align-items: stretch;
     gap: var(--space-2xl);
     justify-content: center;
     padding: var(--space-xl) 0;
-  }
-  .service-item {
-    width: 250px;
-    height: 300px;
-    border-radius: var(--radius-md);
-    box-shadow: var(--box-shadow);
-    padding: var(--space-xl);
-  }
-  .service-item h2 {
-    font-size: var(--text-2xl);
-  }
-  .service-item p {
-    font-size: var(--text-xl);
   }
   .text {
     max-width: var(--width-text-content);
