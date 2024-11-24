@@ -8,16 +8,6 @@ import Gallery from "../components/Gallery.astro";
 import ProjectsGallery from "../components/ProjectsGallery.astro";
 import { getCollection } from "astro:content";
 
-type Image = {
-  image: ImageMetadata;
-  imageAlt: string;
-}
-
-const architecturalAlbum: CollectionEntry<"albums"> = await getEntry(
-  "albums",
-  "architectural",
-);
-
 const projects = await getCollection("projects", ({ data }) => {
   return data.tags?.includes("Fabrication") && data.featured
 })

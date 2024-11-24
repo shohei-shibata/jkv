@@ -13,7 +13,7 @@ origin = "ui"
 [plugins.inputs]
 
 [build]
-publish = "C:\\Users\\Shohei\\repos\\jkv\\public"
+publish = "C:\\Users\\Shohei\\repos\\jkv\\dist"
 publishOrigin = "ui"
 command = "npm run build"
 commandOrigin = "ui"

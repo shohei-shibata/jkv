@@ -227,6 +227,7 @@ a.btn.btn-transparent-light:hover {
 }
 .youtube-embed-container iframe {
   max-width: 100%;
+  margin: auto;
 }
 .youtube-embed-container .caption {
   text-align: center;
