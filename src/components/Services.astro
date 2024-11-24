@@ -66,4 +66,12 @@ const services = [
   .service-item-inner:hover {
     background-color: #ffffffcc;
   }
+  @media screen and (max-width: 768px) {
+   .service-item {
+    width: 80vw;
+   } 
+   .service-item-inner {
+    width: calc(80vw - 4px);
+   }
+  }
 </style>

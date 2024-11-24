@@ -50,4 +50,12 @@ const { item } = Astro.props;
   .item-text p {
     margin: var(--space-sm) 0 0 0;
   }
+  @media screen and (max-width: 500px) {
+   .item {
+    width: 80vw;
+   } 
+   .item-image img {
+    height: 250px;
+   }
+  }
 </style>
