@@ -7,8 +7,8 @@ import ProjectsGallery from "../components/ProjectsGallery.astro";
 import { getCollection } from "astro:content";
 
 const projects = await getCollection("projects", ({ data }) => {
-  return data.tags?.includes("Engineering") && data.featured
-})
+  return data.tags?.includes("Engineering") && data.featured;
+});
 ---
 
 <Layout title="Engineering">
@@ -93,7 +93,9 @@ const projects = await getCollection("projects", ({ data }) => {
     <h1 id="recent-projects">Featured Projects</h1>
     <ProjectsGallery projects={projects} />
     <div class="btn-wrapper">
-    <a class="btn btn-yellow btn-md" href="/projects#engineering">View All Projects</a>
+      <a class="btn btn-yellow btn-md" href="/projects#engineering"
+        >View All Projects</a
+      >
     </div>
   </div>
   <Cta />

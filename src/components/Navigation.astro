@@ -5,10 +5,19 @@ const { pathname } = Astro.url;
 
 const navLinks = [
   {
+    text: "Home",
+    url: "/",
+    desktop: false,
+    mobile: true,
+    icon: "nav-home",
+    currentPage: pathname === "/",
+  },
+  {
     text: "About",
     url: "/about",
     desktop: true,
     mobile: true,
+    icon: "nav-about",
     currentPage: pathname === "/about",
   },
   {
@@ -16,6 +25,7 @@ const navLinks = [
     url: "/fabrication",
     desktop: true,
     mobile: true,
+    icon: "nav-fabrication",
     currentPage: pathname === "/fabrication",
   },
   {
@@ -23,6 +33,7 @@ const navLinks = [
     url: "/engineering",
     desktop: true,
     mobile: true,
+    icon: "nav-engineering",
     currentPage: pathname === "/engineering",
   },
   {
@@ -30,6 +41,7 @@ const navLinks = [
     url: "/projects",
     desktop: true,
     mobile: true,
+    icon: "nav-projects",
     currentPage: pathname === "/projects",
   },
   {
@@ -37,6 +49,7 @@ const navLinks = [
     url: "/contact",
     desktop: true,
     mobile: true,
+    icon: "nav-contact",
     currentPage: pathname === "/contact",
   },
 ];
@@ -77,10 +90,11 @@ const mobileNavLinks = navLinks.filter((item) => item.mobile);
             mobileNavLinks.map((item) => (
               <li>
                 <a
-                  class="nav-link"
+                  class="nav-link mobile"
                   href={item.url}
                   aria-current={item.currentPage && "page"}
                 >
+                  <Icon name={item.icon} />
                   {item.text}
                 </a>
               </li>
@@ -93,9 +107,6 @@ const mobileNavLinks = navLinks.filter((item) => item.mobile);
 </nav>
 
 <style>
-  :root {
-    --mobile-nav-height: 60vh;
-  }
   nav {
     box-shadow: var(--box-shadow-nav);
   }
@@ -151,7 +162,7 @@ const mobileNavLinks = navLinks.filter((item) => item.mobile);
   }
   /* MOBILE */
   :root {
-    --mobile-nav-height: 500px;
+    --mobile-nav-height: 30vh;
   }
   .mobile-nav {
     position: fixed;
@@ -189,25 +200,34 @@ const mobileNavLinks = navLinks.filter((item) => item.mobile);
     padding: 30px;
   }
   .mobile-menu-container ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     height: 100%;
-    align-items: flex-end;
-    gap: var(--space-lg);
-    flex-wrap: wrap;
+    gap: var(--space-md);
     padding: 0;
-    margin-right: 10vw;
   }
   .mobile-menu-container li {
     list-style-type: none;
-    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .mobile-menu-container a {
+    text-transform: uppercase;
     text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .mobile-menu-container a svg {
+    font-size: var(--text-2xl);
   }
   .mobile-nav-open {
     transform: translateY(0);
+  }
+  .nav-link.mobile {
+    font-size: var(--text-sm);
   }
   #close-icon {
     display: none;

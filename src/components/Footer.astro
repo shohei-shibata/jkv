@@ -7,26 +7,32 @@ const links = [
   {
     name: "Home",
     url: "/",
+    external: false,
   },
   {
     name: "About",
     url: "/about",
+    external: false,
   },
   {
     name: "Fabrication",
     url: "/fabrication",
+    external: false,
   },
   {
     name: "Engineering",
     url: "/engineering",
+    external: false,
   },
   {
     name: "Contact Us",
     url: "/contact",
+    external: false,
   },
   {
     name: "JKV Shop",
     url: "https://shop.jkvengineering.com",
+    external: true,
   },
 ];
 ---
@@ -51,7 +57,10 @@ const links = [
         {
           links.map((link) => (
             <li>
-              <a href={link.url}>{link.name}</a>
+              <a href={link.url}>
+                {link.name}
+                {link.external && <Icon name="external-link" />}
+              </a>
             </li>
           ))
         }
@@ -63,8 +72,9 @@ const links = [
           >
         </li>
         <li>
-          <a href="https://www.linkedin.com/company/jkv-engineering-corp/" target="_blank"
-            ><Icon name="linkedin" /></a
+          <a
+            href="https://www.linkedin.com/company/jkv-engineering-corp/"
+            target="_blank"><Icon name="linkedin" /></a
           >
         </li>
       </ul>
@@ -113,7 +123,7 @@ const links = [
   .map {
     grid-area: map;
   }
-  
+
   .address p {
     margin: var(--space-sm) 0;
     text-align: center;
@@ -143,6 +153,11 @@ const links = [
   }
   .footer-links a:hover {
     text-decoration: underline;
+  }
+  .internal-links a {
+    display: flex;
+    gap: var(--space-md);
+    align-items: baseline;
   }
   .social-links svg {
     font-size: var(--text-2xl);
