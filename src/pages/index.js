@@ -19,10 +19,7 @@ const IndexPage = () => {
       <Section dark>
         <Slogan />
       </Section>
-      <Section id="about" title="Fabrication Services">
-        <ServicesList/>
-      </Section>
-      <Section id="about" title="Engineering Services">
+      <Section id="about" title="What We Do">
         <ServicesList/>
       </Section>
       <Section id="latest" title="Latest" dark>

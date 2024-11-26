@@ -1,6 +1,6 @@
 ---
-image: "../../images/fabrication/examples/butcher_block.jpg"
-imageAltText: "Butcher Block sign with LED backlighting"
+image: "../../images/jkv_sign.jpeg"
+imageAltText: "JKV Engineering Sign"
 title: "Design Services"
 category: "Services"
 order: 2
