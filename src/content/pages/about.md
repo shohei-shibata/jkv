@@ -13,16 +13,6 @@ JKV Engineering is a small group of passionate engineers based in Milford Ohio, 
 
 ![CAD design of a compressed hydrogen storage](../../images/hydrogen-cad-1.jpg)
 
-<h2 id="design-services">Design Services</h2>
-
-Turn your business logo into physical signs. Our team can work with graphic design, then convert it into fabrication-ready engineering design (CAD) that includes mounting, lighting, and more. Finally, we will fabricate the sign and deliver to your business.
-
-Of course, we are not limited to storefront signs. We have made beer tap handles and other decorative pieces for business establishments.
-
-![A storefront sign for a restaurant, CAD design](../../images/butcher_block_2.jpg)
-
-![A storefront sign for a restaurant, installed](../../images/butcher_block.jpg)
-
 <h2 id="systems-engineering">Systems Engineering</h2>
 
 JKV has offered full systems engineering under one roof since it was started.  This means physical equipment with sensors, and feedback motion control.  We gained this expertise through developing control systems for vehicle applications including: powertrain control, engine control, thermal management system control, HVAC, and more.  We save our customers time and money by helping to design the physical system and then the electrical design, sensor package, control loops, and HMIs.    We can develop control systems on embedded microprocessors or PLCs.
@@ -47,3 +37,7 @@ _Our Engineering and Fabrication facility has the following capabilities:_
 - CNC Press-Brake Sheetmetal Bending (up to 10' length and 1/2" thickness)!
 - CNC Tube Bending (0.5" to 2.0" steel tubing up to schedule 40 wall thickness)
 - Welding (TIG, AC/DC-Pulse MIG, Stick)
+
+<div class="btn-wrapper">
+  <a href="/fabrication" class="btn btn-yellow">Read More</a>
+</div>

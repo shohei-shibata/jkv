@@ -17,12 +17,12 @@ import { Image } from "astro:assets";
       <h1>
         Highest quality results<br />No matter how simple or complex the project
       </h1>
-      <a href="/contact" class="btn btn-transparent-light">Request a Quote</a>
+      <a href="/contact" class="btn btn-transparent-light">Talk to us</a>
     </div>
   </section>
   <Services />
-  <Fabrication />
   <Engineering />
+  <Fabrication />
   <Cta />
 </Layout>
 
@@ -67,6 +67,7 @@ import { Image } from "astro:assets";
   }
   .banner-text-overlay .btn {
     max-width: 300px;
+    font-size: var(--text-2xl);
   }
   .main-content {
     max-width: var(--width-main-content);

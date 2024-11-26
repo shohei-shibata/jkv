@@ -1,9 +1,9 @@
 ---
 name: "Electronics"
-cover: "../../images/ev-charger_2.jpg"
+cover: "../../images/exergi_30.jpg"
 coverAltText: "EV Charger"
 category: "Fabrication"
 order: 4
 ---
 
-Integrate lighting, EV Charger, etc.
+Wiring harness, high-voltage system, control system
