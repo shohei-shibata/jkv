@@ -9,9 +9,6 @@ const projects: CollectionEntry<"projects">[] = await getCollection("projects");
 const engineeringProjects = projects.filter((p) => {
   return p.data.tags?.includes("Engineering");
 });
-const fabricationProjects = projects.filter((p) => {
-  return p.data.tags?.includes("Fabrication");
-});
 ---
 
 <Layout title="Projects">
@@ -22,14 +19,6 @@ const fabricationProjects = projects.filter((p) => {
 </Layout>
 
 <style>
-  .project-card-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: var(--space-2xl);
-    max-width: var(--width-main-content);
-    align-items: center;
-    justify-content: center;
-  }
   .project-card {
     list-style-type: none;
   }
