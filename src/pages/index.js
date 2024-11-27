@@ -22,17 +22,6 @@ const IndexPage = () => {
       <Section id="about" title="What We Do">
         <ServicesList/>
       </Section>
-      <Section id="latest" title="Latest" dark>
-        <div className="announcements-list-container">
-          {
-            announcements.map(item => {
-              return (
-                <AnnouncementItem item={item}/>
-              )
-            })
-          }
-        </div>
-      </Section>
       <Section id="section-cta-contact" yellow>
         <div className="content-wrapper-default-width">
           <h1 className="cta-text">JKV Shop is Now Open!</h1>
