@@ -1,8 +1,3 @@
-@font-face {
-  font-family: 'Blinker';
-  src: url(/fonts/Blinker-Regular.ttf) format(truetype);
-}
-
 html, body {
   margin: 0;
   padding: 0;

@@ -1,0 +1,25 @@
+---
+import ContactForm from "../components/ContactForm.astro";
+import SectionTitle from "../components/SectionTitle.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Success">
+    <div class="spacer"/>
+  <SectionTitle title="Thank You!" />
+  <div class="main-content">
+    <p class="center-text">
+      Your message was submitted successfully. We'll get back to you as quickly as we can! 
+    </p>
+    <div class="spacer"/>
+    <p class="center-text">
+      <a href="/">Return to JKV Engineering >></a>
+    </p>
+  </div>
+</Layout>
+
+<style>
+  .spacer {
+    height: 50px;
+  }
+</style>
