@@ -52,6 +52,15 @@ const navLinks = [
     icon: "nav-contact",
     currentPage: pathname === "/contact",
   },
+  {
+    text: "Store",
+    url: "https://store.jkvengineering.com",
+    desktop: true,
+    mobile: true,
+    icon: "nav-contact",
+    currentPage: false,
+    external: true,
+  },
 ];
 const desktopNavLinks = navLinks.filter((item) => item.desktop);
 const mobileNavLinks = navLinks.filter((item) => item.mobile);
@@ -72,8 +81,10 @@ const mobileNavLinks = navLinks.filter((item) => item.mobile);
               class="nav-link"
               href={item.url}
               aria-current={item.currentPage && "page"}
+              target={item.external ? "_blank" : ""}
             >
               {item.text}
+              {item.external && <Icon class="icon-external" name="external-link" />}
             </a>
           </li>
         ))
@@ -93,8 +104,8 @@ const mobileNavLinks = navLinks.filter((item) => item.mobile);
                   class="nav-link mobile"
                   href={item.url}
                   aria-current={item.currentPage && "page"}
+                  target={item.external ? "_blank" : ""}
                 >
-                  <Icon name={item.icon} />
                   {item.text}
                 </a>
               </li>
@@ -152,6 +163,9 @@ const mobileNavLinks = navLinks.filter((item) => item.mobile);
     width: 220px;
     height: 75px;
   }
+  .icon-external {
+    margin: 0 0 3px 3px;
+  }
   @media screen and (max-width: 768px) {
     .nav-content-wrapper {
       justify-content: center;
@@ -162,7 +176,7 @@ const mobileNavLinks = navLinks.filter((item) => item.mobile);
   }
   /* MOBILE */
   :root {
-    --mobile-nav-height: 30vh;
+    --mobile-nav-height: 40vh;
   }
   .mobile-nav {
     position: fixed;

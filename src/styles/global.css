@@ -40,6 +40,9 @@ img {
   background: rgb(220,171,78);
   background: linear-gradient(5deg, rgba(220,171,78,0.4618579853816527) 0%, rgba(220,171,78,1) 68%, rgba(220,171,78,1) 100%); 
 }
+.solid-yellow {
+  background: rgb(220,171,78);
+}
 @media screen and (max-width: 768px) {
   main {
     margin-top: 0;

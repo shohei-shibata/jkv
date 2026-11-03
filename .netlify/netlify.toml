@@ -6,17 +6,17 @@ redirects = []
 [functions."*"]
 
 [[plugins]]
+origin = "ui"
 package = "@netlify/plugin-gatsby"
 pinned_version = "3"
-origin = "ui"
 
 [plugins.inputs]
 
 [build]
 publish = "C:\\Users\\Shohei\\repos\\jkv\\dist"
 publishOrigin = "ui"
-command = "npm run build"
 commandOrigin = "ui"
+command = "npm run build"
 
 [build.environment]
 
