@@ -1,3 +1,7 @@
+---
+const siteKey = import.meta.env.PUBLIC_RECAPTCHA_SITE_KEY;
+---
+
 <form
   id="contact-form"
   method="post"
@@ -19,6 +23,10 @@
     <textarea id="sf=message" name="message" rows="10" required></textarea>
   </label>
   <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
+
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <div class="g-recaptcha" data-sitekey={siteKey}></div>
+
   <input
     type="submit"
     class="btn btn-yellow"
@@ -43,10 +51,8 @@
     line-height: 1.5em;
   }
   form input[type="submit"] {
-    margin: var(--space-xl) 0;
-    margin-bottom: 0;
     max-width: var(--btn-width-wide);
-    margin: auto;
+    margin: var(--space-xl) auto;
   }
   form input[type="submit"]:hover {
     cursor: pointer;

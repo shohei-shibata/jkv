@@ -1,16 +1,10 @@
+plugins = []
 headers = []
 redirects = []
 
 [functions]
 
 [functions."*"]
-
-[[plugins]]
-origin = "ui"
-package = "@netlify/plugin-gatsby"
-pinned_version = "3"
-
-[plugins.inputs]
 
 [build]
 publish = "C:\\Users\\Shohei\\repos\\jkv\\dist"

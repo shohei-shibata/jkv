@@ -2,20 +2,18 @@
 	"siteId": "0358e32b-067c-406f-ae84-6c0566318d91",
 	"geolocation": {
 		"data": {
-			"city": "Chicago",
 			"country": {
 				"code": "US",
 				"name": "United States"
 			},
 			"subdivision": {
-				"code": "IL",
-				"name": "Illinois"
+				"code": "IN",
+				"name": "Indiana"
 			},
-			"timezone": "America/Chicago",
-			"latitude": 41.8874,
-			"longitude": -87.6318,
-			"postalCode": "60602"
+			"timezone": "America/Indiana/Indianapolis",
+			"latitude": 39.7684,
+			"longitude": -86.158
 		},
-		"timestamp": 1732486271363
+		"timestamp": 1795615437072
 	}
 }
